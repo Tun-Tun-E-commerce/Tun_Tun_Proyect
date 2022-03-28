@@ -106,14 +106,17 @@ body {
         color: #dd4d5a; }
     .footer-16371 .copyright {
       color: #999999; }
-  
 
+      .Bus{
+        margin-left: 80px;
+      }
 
-
-
-
-
-
-
+      span.product-icon-prev.slick-arrow {
+        margin-left: 20px;
+    }
+    span.product-icon-next.slick-arrow {
+      margin-left: 20px;
+     }
+         
 
 
