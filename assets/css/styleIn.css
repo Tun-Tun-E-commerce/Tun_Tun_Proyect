@@ -23,15 +23,31 @@ main{
   }
 .Ingre{
   padding: 10px;
-  border: 1px solid black;
+  border: solid 3px #000;
   width: 100%;
   background-color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #000;
 }
 .Ingre:hover{
   padding: 10px;
-  border: 1px solid #175df3;
+  border: none solid 3px ;
   width: 100%;
-  background-color: #175df3;
+  background-color: #000;
   font-weight: bold;
   color: #fff;
+  transition: 0.4s;
+}
+
+
+.link-secondary:hover{
+  
+  color:#7dc0f0;
+  transition: 0.2s;
+
+}
+
+.bot{
+  cursor: pointer;
 }
