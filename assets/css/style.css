@@ -18369,7 +18369,9 @@ body {
  }
  
  #scrollUp:hover {
-   background-color: #BB9B1F;
+   background-color: #fbeef2;
+   color: #000;
+   border: solid 1px #000;
  }
  
  @-webkit-keyframes lastudioZoomIn {
