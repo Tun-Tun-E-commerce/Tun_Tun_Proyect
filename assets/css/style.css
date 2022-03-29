@@ -5119,6 +5119,7 @@ body {
    padding-left: 0;
    margin-bottom: 0;
    list-style: none;
+   border-bottom: 2px solid ;
  }
  
  .navbar-nav .nav-link {
@@ -19446,6 +19447,7 @@ body {
  }
  
  .btn-style a.btn {
+   padding: 10px 50px 10px;
    border-radius: 30px;
    font-family: "Proxima Nova Rg";
  }
@@ -19478,9 +19480,7 @@ body {
    }
  }
  
- .btn-style a.btn.btn-padding-2 {
-   padding: 17px 25px;
- }
+ 
  
  @media only screen and (max-width: 767px) {
    .btn-style a.btn.btn-padding-2 {
@@ -19632,7 +19632,7 @@ body {
  }
  
  .nav-style-1 > span:hover {
-   background-color: #fff;
+   background-color: black;
    border: 1px solid #fff;
  }
  

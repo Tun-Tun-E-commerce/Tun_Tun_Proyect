@@ -117,6 +117,11 @@ body {
     span.product-icon-next.slick-arrow {
       margin-left: 20px;
      }
-         
+
+     a.btn.btn-outline-primary.slider-btn.animated {
+      padding: 15px 40px 15px;
+      margin-left: 200px;
+  }
+            
 
 
