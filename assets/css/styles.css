@@ -108,7 +108,25 @@ body {
       color: #999999; }
 
       .Bus{
-        margin-left: 80px;
+        margin-left: 90px;
+      }
+
+      .Form-S{
+        width: 200px;
+        height: 26px;
+        background: transparent;
+        border: none;
+        font-size: 13pt;
+        color: black;
+        padding-left: 25px;
+        border-bottom: #000 1px solid;
+        margin-right: 5px;
+ 
+      }
+      .Button-s{
+        padding: 2px;
+        background: transparent;
+        border: none;
       }
 
       span.product-icon-prev.slick-arrow {

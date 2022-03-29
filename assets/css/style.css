@@ -19632,12 +19632,12 @@ body {
  }
  
  .nav-style-1 > span:hover {
-   background-color: black;
+   background-color: #fff;
    border: 1px solid #fff;
  }
  
  .nav-style-1 > span:hover svg path {
-   stroke: #fff;
+   stroke: black;
  }
  
  .nav-style-1.nav-style-1-modify > span {
