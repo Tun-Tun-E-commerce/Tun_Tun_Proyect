@@ -38,7 +38,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
- 
+ @font-face {
+      font-family: "Fontaw";
+      src: url("/assets/fonts/VarelaRound-Regular.ttf");
+    }
 
 :root {
   --bs-blue: #0d6efd;
@@ -81,7 +84,7 @@
  
  body {
    margin: 0;
-   font-family: "Rozha One", serif;
+  font-family: "Fontaw";
    font-size: 0.875rem;
    font-weight: 400;
    line-height: 1.5;
@@ -119,7 +122,7 @@ body {
  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
    margin-top: 0;
    margin-bottom: 0.5rem;
-   font-family: "Rozha One", serif;
+   font-family: "Fontaw";
    font-weight: 400;
    line-height: 1.2;
    color: #181818;
@@ -5119,7 +5122,7 @@ body {
    padding-left: 0;
    margin-bottom: 0;
    list-style: none;
-   border-bottom: 2px solid ;
+   
  }
  
  .navbar-nav .nav-link {
@@ -7021,7 +7024,7 @@ body {
    z-index: 1070;
    display: block;
    margin: 0;
-   font-family: "Rozha One", serif;
+   font-family: "Fontaw";
    font-style: normal;
    font-weight: 400;
    line-height: 1.5;
@@ -7134,7 +7137,7 @@ body {
    z-index: 1060;
    display: block;
    max-width: 276px;
-   font-family: "Rozha One", serif;
+   font-family: "Fontaw";
    font-style: normal;
    font-weight: 400;
    line-height: 1.5;
@@ -17245,7 +17248,7 @@ body {
    line-height: 32px;
    color: #8E8E8E;
    margin-bottom: 15px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  ul {
@@ -18465,7 +18468,7 @@ body {
    font-size: 24px;
    line-height: 1;
    display: inline-block;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    letter-spacing: 5.22px;
  }
  
@@ -18572,7 +18575,7 @@ body {
    height: 22px;
    line-height: 22px;
    border-radius: 100%;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    font-size: 11px;
    display: inline-block;
    text-align: center;
@@ -18828,7 +18831,7 @@ body {
  .sidebar-cart-active .sidebar-cart-all .cart-content ul li .cart-title h4, .sidebar-cart-active .sidebar-cart-all .cart-content ul li .cart-title .h4 {
    font-size: 14px;
    margin: 0 0 8px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .sidebar-cart-active .sidebar-cart-all .cart-content ul li .cart-title h4 a:hover, .sidebar-cart-active .sidebar-cart-all .cart-content ul li .cart-title .h4 a:hover {
@@ -18838,7 +18841,7 @@ body {
  .sidebar-cart-active .sidebar-cart-all .cart-content ul li .cart-title span {
    font-size: 16px;
    color: #8E8E8E;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .sidebar-cart-active .sidebar-cart-all .cart-content ul li .cart-delete {
@@ -18881,13 +18884,13 @@ body {
    font-size: 18px;
    text-transform: capitalize;
    margin: 0;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .sidebar-cart-active .sidebar-cart-all .cart-content .cart-total h4 span, .sidebar-cart-active .sidebar-cart-all .cart-content .cart-total .h4 span {
    font-size: 18px;
    color: #8E8E8E;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    float: right;
  }
  
@@ -19017,7 +19020,7 @@ body {
  }
  
  .slinky-theme-default ul li a {
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    font-size: 15px;
    position: relative;
  }
@@ -19285,7 +19288,7 @@ body {
  .slider-content h3, .slider-content .h3 {
   font-size: 20px;
   color: #434A53;
-  font-family: "Proxima Nova Rg";
+  font-family: "Fontaw";
   letter-spacing: 8.33px;
   margin: 0;
 }
@@ -19451,7 +19454,7 @@ body {
  .btn-style a.btn {
    padding: 10px 50px 10px;
    border-radius: 30px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  @media only screen and (min-width: 1200px) and (max-width: 1365px) {
@@ -20218,7 +20221,7 @@ body {
    display: inline-block;
    margin: 0 47px;
    line-height: .8;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    border-bottom: 1px solid transparent;
  }
  
@@ -20305,7 +20308,7 @@ body {
    background-color: #181818;
    line-height: 1;
    display: inline-block;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    padding: 5px 18px 7px;
  }
  
@@ -20372,13 +20375,13 @@ body {
  .product-wrap .product-content h3, .product-wrap .product-content .h3 {
    font-size: 14px;
    margin: 0 0 14px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .product-wrap .product-content .product-price span {
    color: #8E8E8E;
    font-size: 16px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    display: inline-block;
    line-height: 1;
  }
@@ -20401,7 +20404,7 @@ body {
  
  .product-wrap .product-content-2 h3, .product-wrap .product-content-2 .h3 {
    font-size: 20px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    margin: 0;
    line-height: 1;
  }
@@ -20422,7 +20425,7 @@ body {
  
  .product-wrap .product-content-2 span {
    font-size: 20px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    line-height: 1;
    display: inline-block;
    color: #ffff;
@@ -20833,7 +20836,7 @@ body {
    color: #6D6D6D;
    font-size: 14px;
    display: inline-block;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .nice-select-style-2 {
@@ -20842,7 +20845,7 @@ body {
    -moz-appearance: none;
    -webkit-appearance: none;
    cursor: pointer;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    font-size: 13px;
    color: #6D6D6D;
    text-transform: uppercase;
@@ -20872,7 +20875,7 @@ body {
  }
  
  .nice-select-style-2 ul li {
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    font-size: 14px;
    text-transform: capitalize;
    padding: 2px 20px;
@@ -20919,7 +20922,7 @@ body {
  .sorting-filter-wrap .filter-wrap a {
    color: #6D6D6D;
    font-size: 13px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    text-transform: uppercase;
  }
  
@@ -20978,7 +20981,7 @@ body {
    color: #1D1D1D;
    text-align: center;
    display: inline-block;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    border: 1px solid #CDCDCD;
    width: 37px;
    height: 37px;
@@ -21138,7 +21141,7 @@ body {
  }
  
  .subscribe-form form .mc-form input {
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    font-size: 16px;
    color: #ffffff;
    background-color: transparent;
@@ -21213,7 +21216,7 @@ body {
    font-size: 20px;
    letter-spacing: 4px;
    display: inline-block;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    font-weight: bold;
    padding: 26px 273px 25px 40px;
    margin: 0;
@@ -21300,7 +21303,7 @@ body {
  .banner-wrap .banner-content-2 h3, .banner-wrap .banner-content-2 .h3 {
    font-size: 28px;
    margin: 0;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -21352,7 +21355,7 @@ body {
  .banner-wrap .banner-content-3 h4, .banner-wrap .banner-content-3 .h4 {
    font-size: 22px;
    letter-spacing: 2px;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
    margin: 0;
  }
  
@@ -21417,7 +21420,7 @@ body {
    line-height: 1;
    color: #ffffff;
    font-size: 16px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    background-color: #D95252;
    padding: 10px 44px;
  }
@@ -21540,7 +21543,7 @@ body {
  .footer-list ul li a {
    font-size: 20px;
    display: block;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
    letter-spacing: 1px;
    text-transform: uppercase;
  }
@@ -21584,7 +21587,7 @@ body {
    color: #282828;
    font-size: 14px;
    letter-spacing: 1px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .copyright p svg {
@@ -21643,7 +21646,7 @@ body {
    color: #6D6D6D;
    font-size: 18px;
    line-height: 36px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    margin: 0 auto 95px;
    width: 51%;
    text-align: center;
@@ -22192,7 +22195,7 @@ body {
  .breadcrumb-content ul li {
    color: #8E8E8E;
    display: inline-block;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    margin-right: 20px;
    line-height: 1;
  }
@@ -22210,7 +22213,7 @@ body {
  .breadcrumb-content ul li a {
    color: #8E8E8E;
    display: inline-block;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    line-height: 1;
  }
  
@@ -22224,7 +22227,7 @@ body {
    letter-spacing: 1px;
    font-size: 22px;
    text-transform: uppercase;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    margin: 0;
  }
  
@@ -22239,7 +22242,7 @@ body {
    color: #1D1D1D;
    letter-spacing: 2.15px;
    text-transform: uppercase;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .sidebar-widget .shop-category {
@@ -22269,7 +22272,7 @@ body {
    font-size: 18px;
    color: #6D6D6D;
    display: block;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .sidebar-widget .shop-category ul li a:hover {
@@ -22354,7 +22357,7 @@ body {
    font-size: 12px;
    display: inline-block;
    margin-right: 3px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .sidebar-widget .price-filter .price-slider-amount .label-input input {
@@ -22362,7 +22365,7 @@ body {
    height: auto;
    width: 65px;
    font-size: 12px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .sidebar-widget .price-filter .price-slider-amount .label-input input::-moz-input-placeholder {
@@ -22383,7 +22386,7 @@ body {
    font-size: 11px;
    font-weight: 700;
    text-transform: uppercase;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    border: 2px solid #E3E3E3;
    background-color: transparent;
    -webkit-transition: all .3s ease 0s;
@@ -22495,7 +22498,7 @@ body {
    line-height: 1;
    color: #6D6D6D;
    font-size: 12px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    text-transform: uppercase;
  }
  
@@ -22537,7 +22540,7 @@ body {
    width: 55px;
    height: 45px;
    font-size: 12px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    color: #181818;
    border: 1px solid #E6E6E6;
    display: inline-block;
@@ -22652,7 +22655,7 @@ body {
    color: #181818;
    line-height: 1;
    padding: 15px 15px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .sidebar-widget .sidebar-widget-tag ul li a:hover {
@@ -22671,7 +22674,7 @@ body {
    height: 60px;
    color: #B5B5B5;
    padding: 2px 50px 2px 20px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .sidebar-widget .sidebar-search .sidebar-search-form button {
@@ -22727,7 +22730,7 @@ body {
  .sidebar-widget .blog-category ul li a {
    display: inline-block;
    line-height: 1;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    color: #181818;
  }
  
@@ -22737,7 +22740,7 @@ body {
  
  .sidebar-widget .blog-category ul li span {
    color: #6D6D6D;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .sidebar-widget .sidebar-blog-wrap {
@@ -22794,7 +22797,7 @@ body {
  
  .sidebar-widget .sidebar-blog-wrap .single-sidebar-blog .sidebar-blog-content h3, .sidebar-widget .sidebar-blog-wrap .single-sidebar-blog .sidebar-blog-content .h3 {
    font-size: 16px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    margin: 0 0 6px;
  }
  
@@ -22810,7 +22813,7 @@ body {
    color: #6D6D6D;
    font-size: 10px;
    display: inline-block;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .sidebar-widget .sidebar-blog-wrap .single-sidebar-blog:hover .sidebar-blog-img a img {
@@ -22825,7 +22828,7 @@ body {
  
  .sidebar-widget .sidebar-archive-wrap select {
    color: #3E3E3E;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    border: 1px solid #D4D4D4;
    width: 100%;
    -moz-appearance: none;
@@ -22848,7 +22851,7 @@ body {
  
  .sidebar-widget .sidebar-widget-tag-2 ul li a {
    color: #535353;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .sidebar-widget .sidebar-widget-tag-2 ul li a:hover {
@@ -22864,7 +22867,7 @@ body {
    border: 1px solid #262626;
    height: 70px;
    color: #181818;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    padding: 2px 50px 2px 30px;
    width: 100%;
    background-color: transparent;
@@ -23035,7 +23038,7 @@ body {
  .contact-form-wrap .contact-form-title p {
    color: #181818;
    margin: 0;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .contact-form-wrap .contact-form-style {
@@ -23058,7 +23061,7 @@ body {
    height: 82px;
    width: 100%;
    color: #181818;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    border: 1px solid #D4D4D4;
    padding: 2px 24px;
    margin: 0 0 20px;
@@ -23098,7 +23101,7 @@ body {
    padding: 24px 10px;
    text-align: center;
    width: 100%;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    border: none;
  }
  
@@ -23177,7 +23180,7 @@ body {
  }
  
  .contact-info-area ul li span {
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    display: inline-block;
    margin-left: 29px;
    line-height: 19px;
@@ -23422,7 +23425,7 @@ body {
    font-size: 24px;
    color: #ffffff;
    border: 2px solid #E8CCB4;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    background-color: transparent;
    padding: 32px 117px;
    -webkit-transition: all .3s ease 0s;
@@ -23757,7 +23760,7 @@ body {
    color: #6D6D6D;
    font-size: 18px;
    text-align: center;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    z-index: 2;
  }
  
@@ -23783,7 +23786,7 @@ body {
    color: #6D6D6D;
    font-size: 18px;
    position: absolute;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    right: 0;
    top: -34px;
  }
@@ -23908,7 +23911,7 @@ body {
    color: #BB9B1F;
    font-size: 18px;
    letter-spacing: -0.64px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .team-wrap:hover .team-img img {
@@ -24082,7 +24085,7 @@ body {
  
  .blog-wrap .blog-content .blog-category a {
    color: #BB9B1F;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .blog-wrap .blog-content .blog-category a:hover {
@@ -24132,7 +24135,7 @@ body {
  
  .blog-wrap .blog-content .blog-btn-date-wrap .blog-btn a.btn {
    border: 1px solid #979797;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    padding: 14px 23px 13px;
    display: inline-block;
    font-size: 16px;
@@ -24146,7 +24149,7 @@ body {
  
  .blog-wrap .blog-content .blog-btn-date-wrap .blog-date a {
    display: inline-block;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    font-size: 16px;
  }
  
@@ -24257,7 +24260,7 @@ body {
    font-size: 16px;
    color: #BB9B1F;
    display: block;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    margin: 22px 0 0;
  }
  
@@ -24508,7 +24511,7 @@ body {
  .blog-details-wrap .blog-prev-next-wrap .blog-prev-wrap h5, .blog-details-wrap .blog-prev-next-wrap .blog-prev-wrap .h5 {
    font-size: 18px;
    line-height: 24px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    margin-bottom: 8px;
    width: 80%;
  }
@@ -24517,7 +24520,7 @@ body {
    display: inline-block;
    font-size: 14px;
    color: #494949;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .blog-details-wrap .blog-prev-next-wrap .blog-prev-wrap > a:hover {
@@ -24531,7 +24534,7 @@ body {
  .blog-details-wrap .blog-prev-next-wrap .blog-next-wrap h5, .blog-details-wrap .blog-prev-next-wrap .blog-next-wrap .h5 {
    font-size: 18px;
    line-height: 24px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    margin: 0 0 8px auto;
    width: 80%;
  }
@@ -24546,7 +24549,7 @@ body {
    display: inline-block;
    font-size: 14px;
    color: #494949;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .blog-details-wrap .blog-prev-next-wrap .blog-next-wrap > a:hover {
@@ -24629,7 +24632,7 @@ body {
    line-height: 28px;
    color: #181818;
    margin: 0 0 15px;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
    font-style: italic;
  }
  
@@ -24661,7 +24664,7 @@ body {
  
  .blog-details-wrap .blog-details-comment .single-blog-comment-wrap .single-blog-comment .blog-comment-content .time-reply .time span {
    font-size: 12px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .blog-details-wrap .blog-details-comment .single-blog-comment-wrap .single-blog-comment .blog-comment-content .time-reply .reply {
@@ -24684,7 +24687,7 @@ body {
  
  .blog-details-wrap .blog-details-comment .single-blog-comment-wrap .single-blog-comment .blog-comment-content .time-reply .reply a {
    font-size: 12px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .blog-details-wrap .blog-details-comment .single-blog-comment-wrap .single-blog-comment.single-blog-comment-mrg {
@@ -24738,7 +24741,7 @@ body {
    color: #181818;
    width: 100%;
    background-color: transparent;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .blog-details-wrap .blog-comment-form form .leave-form input::-moz-input-placeholder, .blog-details-wrap .blog-comment-form form .leave-form textarea::-moz-input-placeholder {
@@ -24763,7 +24766,7 @@ body {
  }
  
  .blog-details-wrap .blog-comment-form form .text-submit input {
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    color: #ffffff;
    background-color: #181818;
    text-transform: uppercase;
@@ -24891,7 +24894,7 @@ body {
  .product-details-content .product-rating-stock-review .product-review span {
    color: #262626;
    font-size: 10px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .product-details-content .product-rating-stock-review .product-stock {
@@ -24911,12 +24914,12 @@ body {
  }
  
  .product-details-content .product-rating-stock-review .product-stock span {
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
    font-size: 12px;
  }
  
  .product-details-content > h2, .product-details-content > .h2 {
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
    font-size: 28px;
    line-height: 1;
    margin: 20px 0 15px;
@@ -24938,7 +24941,7 @@ body {
    color: #C79977;
    font-size: 24px;
    display: inline-block;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
  }
  
  .product-details-content p {
@@ -24959,7 +24962,7 @@ body {
  }
  
  .product-details-content .product-details-color span {
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    font-size: 14px;
    margin: 6px 12px 0 0;
  }
@@ -25046,7 +25049,7 @@ body {
    color: #ffffff;
    font-size: 16px;
    text-transform: uppercase;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    padding: 20px 74px;
  }
  
@@ -25079,7 +25082,7 @@ body {
    display: inline-block;
    font-size: 11px;
    text-transform: uppercase;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    display: -webkit-box;
    display: -webkit-flex;
    display: -ms-flexbox;
@@ -25098,7 +25101,7 @@ body {
    display: inline-block;
    font-size: 11px;
    text-transform: uppercase;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    display: -webkit-box;
    display: -webkit-flex;
    display: -ms-flexbox;
@@ -25127,19 +25130,19 @@ body {
  
  .product-details-content .product-details-meta-wrap .product-details-meta span {
    font-size: 14px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    margin-right: 5px;
  }
  
  .product-details-content .product-details-meta-wrap .product-details-meta ul li {
    display: inline-block;
    font-size: 14px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .product-details-content .product-details-meta-wrap .product-details-meta ul li a {
    font-size: 14px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .product-details-content .product-details-social a {
@@ -25188,7 +25191,7 @@ body {
  .description-review-wrapper .tab-style-2 a {
    color: #6D6D6D;
    font-size: 16px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    display: inline-block;
    text-transform: uppercase;
    position: relative;
@@ -25325,7 +25328,7 @@ body {
    border-right: 1px solid #ebebeb;
    font-size: 16px;
    padding: 12px 10px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  @media only screen and (max-width: 767px) {
@@ -25392,12 +25395,12 @@ body {
  .single-review .review-content h5, .single-review .review-content .h5 {
    font-size: 12px;
    margin: 11px 0 8px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .single-review .review-content h5 span, .single-review .review-content .h5 span {
    font-size: 14px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .single-review .review-content .review-rating {
@@ -25539,7 +25542,7 @@ body {
    background: #181818;
    border: none;
    letter-spacing: 1px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .ratting-form-wrapper .ratting-form .form-submit input:hover {
@@ -25561,7 +25564,7 @@ body {
    font-size: 15px;
    margin: 0 0 10px;
    line-height: 28px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  @media only screen and (max-width: 767px) {
@@ -25734,7 +25737,7 @@ body {
  .back-to-shop a {
    color:black;
    font-size: 18px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    display: -webkit-box;
    display: -webkit-flex;
    display: -ms-flexbox;
@@ -25889,7 +25892,7 @@ body {
    height: 60px;
    line-height: 50px;
    text-align: center;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    font-size: 14px;
    color: #181818;
    padding: 0;
@@ -25909,7 +25912,7 @@ body {
    position: absolute;
    color: #D8D8D8;
    left: 9px;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
    cursor: pointer;
  }
  
@@ -25923,7 +25926,7 @@ body {
  .product-quality .qtybutton.dec {
    top: -2px;
    font-size: 40px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .product-details-size {
@@ -25973,7 +25976,7 @@ body {
    -moz-appearance: none;
    -webkit-appearance: none;
    cursor: pointer;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    font-size: 14px;
    padding: 0;
    height: auto;
@@ -25996,7 +25999,7 @@ body {
  }
  
  .product-details-size .nice-select-style-1 ul li {
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    font-size: 14px;
  }
  
@@ -26036,7 +26039,7 @@ body {
    font-weight: 400;
    text-transform: uppercase;
    padding: 14px 23px 14px;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
  }
  
  @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -26159,7 +26162,7 @@ body {
  
  .cart-table-content .table-content table tbody > tr td {
    padding: 23px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -26186,7 +26189,7 @@ body {
    display: block;
    font-size: 15px;
    color: #000;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .cart-table-content .table-content table tbody > tr td.product-name h5 a, .cart-table-content .table-content table tbody > tr td.product-name .h5 a {
@@ -26241,7 +26244,7 @@ body {
    text-transform: capitalize;
    letter-spacing: .3px;
    border-radius: 3px;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
  }
  
  @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -26273,7 +26276,7 @@ body {
    cursor: pointer;
    margin-right: 27px;
    border-radius: 3px;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
    -webkit-transition: all 0.3s ease 0s;
    -o-transition: all 0.3s ease 0s;
    transition: all 0.3s ease 0s;
@@ -26293,7 +26296,7 @@ body {
  
  .cart-calculate-discount-wrap h4, .cart-calculate-discount-wrap .h4 {
    font-size: 20px;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
    margin: 0 0 40px;
  }
  
@@ -26321,7 +26324,7 @@ body {
  
  .select-style select {
    width: 100%;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .select-style .select2-container--default {
@@ -26346,7 +26349,7 @@ body {
    line-height: 52px;
    padding-left: 16px;
    padding-right: 20px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .select2-container--default .select2-search--dropdown .select2-search__field {
@@ -26374,7 +26377,7 @@ body {
    background-color: transparent;
    padding: 2px 16px;
    width: 100%;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .calculate-discount-content .input-style input:-moz-input-placeholder {
@@ -26390,7 +26393,7 @@ body {
  .calculate-discount-content .calculate-discount-btn a {
    font-size: 16px;
    background-color: #000;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .calculate-discount-content .calculate-discount-btn a.btn {
@@ -26437,12 +26440,12 @@ body {
        -ms-flex-pack: justify;
            justify-content: space-between;
    padding: 0 0 18px;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
  }
  
  .grand-total-wrap .grand-total-content h3 span, .grand-total-wrap .grand-total-content .h3 span {
    font-size: 16px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .grand-total-wrap .grand-total-content .grand-shipping {
@@ -26451,7 +26454,7 @@ body {
  
  .grand-total-wrap .grand-total-content .grand-shipping > span {
    font-size: 16px;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
  }
  
  .grand-total-wrap .grand-total-content .grand-shipping ul {
@@ -26468,7 +26471,7 @@ body {
        -ms-flex-align: center;
            align-items: center;
    margin-bottom: 7px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .grand-total-wrap .grand-total-content .grand-shipping ul li:last-child {
@@ -26502,7 +26505,7 @@ body {
    font-size: 14px;
    line-height: 1.7;
    border-left: 6px solid #3198b6;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    margin: 0;
  }
  
@@ -26517,7 +26520,7 @@ body {
        -ms-flex-pack: justify;
            justify-content: space-between;
    margin: 0;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
  }
  
  .grand-total-wrap .grand-total h4 span, .grand-total-wrap .grand-total .h4 span {
@@ -26533,7 +26536,7 @@ body {
    text-transform: capitalize;
    background-color: #181818;
    display: block;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
  }
  
  @media only screen and (max-width: 767px) {
@@ -26590,7 +26593,7 @@ body {
    font-size: 14px;
    text-transform: uppercase;
    padding: 16px 12px 14px;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
  }
  
  .wishlist-table-content .table-content table thead > tr th.width-thumbnail {
@@ -26703,7 +26706,7 @@ body {
    display: block;
    font-size: 15px;
    color: #000;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .wishlist-table-content .table-content table tbody > tr td.product-name h5 a, .wishlist-table-content .table-content table tbody > tr td.product-name .h5 a {
@@ -26716,12 +26719,12 @@ body {
  
  .wishlist-table-content .table-content table tbody > tr td.product-price span {
    font-size: 15px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .wishlist-table-content .table-content table tbody > tr td.stock-status span {
    font-size: 14px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .wishlist-table-content .table-content table tbody > tr td.stock-status span i {
@@ -26732,7 +26735,7 @@ body {
    font-size: 28px;
    color: #c3c3c3;
    display: inline-block;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .wishlist-table-content .table-content table tbody > tr td.product-remove a:hover {
@@ -26741,7 +26744,7 @@ body {
  
  .wishlist-table-content .table-content table tbody > tr td.wishlist-cart a {
    display: inline-block;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    font-size: 15px;
    color: #ffffff;
    padding: 10px 15px 10px;
@@ -26796,7 +26799,7 @@ body {
  
  .login-register-wrapper .login-register-tab-list a {
    position: relative;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .login-register-wrapper .login-register-tab-list a::before {
@@ -26820,7 +26823,7 @@ body {
    -webkit-transition: all 0.3s ease 0s;
    -o-transition: all 0.3s ease 0s;
    transition: all 0.3s ease 0s;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
  }
  
  .login-register-wrapper .login-register-tab-list a:last-child::before {
@@ -26860,7 +26863,7 @@ body {
    padding: 0 15px;
    color: #181818;
    width: 100%;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .login-register-wrapper .login-form-container .login-register-form form input::-moz-input-placeholder {
@@ -26899,7 +26902,7 @@ body {
  .login-register-wrapper .login-form-container .login-register-form form .button-box .login-toggle-btn label {
    font-size: 15px;
    font-weight: 400;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  @media only screen and (max-width: 767px) {
@@ -26912,7 +26915,7 @@ body {
    float: right;
    font-size: 15px;
    color: #181818;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    -webkit-transition: all 0.3s ease 0s;
    -o-transition: all 0.3s ease 0s;
    transition: all 0.3s ease 0s;
@@ -26941,7 +26944,7 @@ body {
    -webkit-transition: all 0.3s ease 0s;
    -o-transition: all 0.3s ease 0s;
    transition: all 0.3s ease 0s;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .login-register-wrapper .login-form-container .login-register-form form .button-box button:hover {
@@ -27019,7 +27022,7 @@ body {
    font-size: 15px;
    text-transform: capitalize;
    margin: 0 0 5px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .checkout-login-info form .sin-checkout-login label span {
@@ -27031,7 +27034,7 @@ body {
    height: 50px;
    background-color: transparent;
    width: 100%;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    padding: 2px 20px;
  }
  
@@ -27051,7 +27054,7 @@ body {
    display: inline-block;
    float: left;
    margin-right: 20px;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
    text-transform: uppercase;
  }
  
@@ -27075,12 +27078,12 @@ body {
    position: relative;
    top: 5px;
    width: 17px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .checkout-login-info form .button-remember-wrap .checkout-login-toggle-btn label {
    width: 100%;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    font-size: 15px;
    margin: 0 0 0 5px;
  }
@@ -27091,7 +27094,7 @@ body {
  
  .checkout-login-info form .lost-password a {
    font-size: 15px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .checkout-login-info2 {
@@ -27124,7 +27127,7 @@ body {
    width: 48%;
    font-size: 14px;
    padding: 0 20px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .checkout-login-info3 form input[type="text"]:focus {
@@ -27141,7 +27144,7 @@ body {
    font-size: 13px;
    text-transform: uppercase;
    width: inherit;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -27164,7 +27167,7 @@ body {
    font-size: 20px;
    position: relative;
    margin: 0 0 55px;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
    text-transform: uppercase;
  }
  
@@ -27189,7 +27192,7 @@ body {
    text-transform: capitalize;
    display: block;
    margin: 0 0 5px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .billing-info-wrap .billing-info label abbr {
@@ -27204,7 +27207,7 @@ body {
    color: #1f2226;
    font-size: 14px;
    width: 100%;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .billing-info-wrap .billing-info input:focus {
@@ -27220,7 +27223,7 @@ body {
    text-transform: capitalize;
    display: block;
    margin: 0 0 5px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .billing-info-wrap .billing-select label abbr {
@@ -27238,7 +27241,7 @@ body {
    background: rgba(0, 0, 0, 0) url("../../assets/images/icon-img/arrow-down-3.png") no-repeat scroll right 18px center;
    cursor: pointer;
    width: 100%;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .billing-info-wrap .billing-select select option {
@@ -27258,7 +27261,7 @@ body {
    position: relative;
    top: 5px;
    color: #181818;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .billing-info-wrap .checkout-account span {
@@ -27267,7 +27270,7 @@ body {
    margin: 0 0 0 12px;
    font-size: 14px;
    text-transform: uppercase;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .billing-info-wrap .checkout-account-toggle label {
@@ -27275,7 +27278,7 @@ body {
    text-transform: capitalize;
    display: block;
    margin: 0 0 5px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .billing-info-wrap .checkout-account-toggle label abbr {
@@ -27289,7 +27292,7 @@ body {
    color: #181818;
    font-size: 14px;
    padding: 2px 20px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    width: 100%;
  }
  
@@ -27311,7 +27314,7 @@ body {
    text-transform: capitalize;
    display: block;
    margin: 0 0 5px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .billing-info-wrap .additional-info-wrap textarea {
@@ -27321,7 +27324,7 @@ body {
    padding: 20px;
    color: #181818;
    font-size: 14px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    width: 100%;
    border: none;
  }
@@ -27376,7 +27379,7 @@ body {
    position: relative;
    margin: 0 0 45px;
    text-transform: uppercase;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
    width: 100%;
  }
  
@@ -27398,7 +27401,7 @@ body {
    font-size: 14px;
    padding: 0 0 7px;
    text-transform: uppercase;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .your-order-area .your-order-wrap .your-order-info ul li span {
@@ -27412,7 +27415,7 @@ body {
  
  .your-order-area .your-order-wrap .your-order-info.order-subtotal ul li span {
    font-size: 16px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .your-order-area .your-order-wrap .your-order-info.order-shipping {
@@ -27427,7 +27430,7 @@ body {
    text-align: right;
    color: #181818;
    text-transform: capitalize;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .your-order-area .your-order-wrap .your-order-info.order-total {
@@ -27436,7 +27439,7 @@ body {
  
  .your-order-area .your-order-wrap .your-order-info.order-total ul li span {
    font-size: 16px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .your-order-area .your-order-wrap .your-order-middle {
@@ -27447,7 +27450,7 @@ body {
  .your-order-area .your-order-wrap .your-order-middle ul li {
    font-size: 14px;
    margin: 0 0 11px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .your-order-area .your-order-wrap .your-order-middle ul li:last-child {
@@ -27473,7 +27476,7 @@ body {
    float: left;
    height: auto;
    margin-top: 5px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .your-order-area .your-order-wrap .payment-method .sin-payment label {
@@ -27488,7 +27491,7 @@ body {
    -webkit-align-items: center;
        -ms-flex-align: center;
            align-items: center;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  @media only screen and (max-width: 767px) {
@@ -27537,7 +27540,7 @@ body {
    color: #fff;
    font-size: 14px;
    text-align: center;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
  }
  
  .your-order-area .Place-order a:hover {
@@ -27568,7 +27571,7 @@ body {
  .myaccount-tab-menu a {
    border: 1px solid #ccc;
    border-bottom: none;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
    font-size: 13px;
    display: block;
    padding: 10px 15px;
@@ -27617,7 +27620,7 @@ body {
    border-bottom: 1px dashed #ccc;
    padding-bottom: 10px;
    margin-bottom: 25px;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
  }
  
  .myaccount-content .welcome a:hover {
@@ -27636,7 +27639,7 @@ body {
  .myaccount-content fieldset legend {
    font-size: 16px;
    margin-bottom: 20px;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
    padding-bottom: 10px;
    border-bottom: 1px solid #ccc;
  }
@@ -27654,7 +27657,7 @@ body {
    text-transform: capitalize;
    display: block;
    margin: 0 0 5px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .myaccount-content .account-details-form .single-input-item input {
@@ -27664,7 +27667,7 @@ body {
    padding: 2px 20px;
    color: #1f2226;
    font-size: 13px;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
    width: 100%;
  }
  
@@ -27679,7 +27682,7 @@ body {
    padding: 9px 25px;
    color: #fff;
    font-size: 13px;
-   font-family: "Proxima Nova Lt";
+   font-family: "Fontaw";
  }
  
  .myaccount-content .account-details-form .single-input-item button:hover {
@@ -27699,7 +27702,7 @@ body {
    border-color: #ccc;
    border-bottom: 0;
    color: #1f2226;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .myaccount-table table td,
@@ -27707,7 +27710,7 @@ body {
    padding: 10px;
    vertical-align: middle;
    border-color: #ccc;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
  
  .saved-message {
@@ -27716,7 +27719,7 @@ body {
    font-size: 14px;
    padding: 20px 0;
    color: #333;
-   font-family: "Proxima Nova Rg";
+   font-family: "Fontaw";
  }
   
  

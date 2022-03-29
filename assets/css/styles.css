@@ -85,7 +85,7 @@ a:hover {
 
 .footer-16371 {
   padding: 1rem 0;
-  font-family: "Rozha One", serif;
+  font-family: "Fontaw", serif;
 }
 .footer-16371 .footer-site-logo {
   text-align: center;
@@ -157,6 +157,7 @@ a:hover {
 }
 .Form-S::placeholder {
   color: #000;
+  opacity:0.7;
 }
 
 .Button-s {
