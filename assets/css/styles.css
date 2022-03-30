@@ -84,7 +84,7 @@ a:hover {
 }
 
 .footer-16371 {
-  padding: 1rem 0;
+  padding:0;
   font-family: "Fontaw", serif;
 }
 .footer-16371 .footer-site-logo {
@@ -137,6 +137,7 @@ a:hover {
   color: #dd4d5a;
 }
 .footer-16371 .copyright {
+  padding-bottom: 0;
   color: #999999;
 }
 
@@ -177,4 +178,44 @@ a.btn.btn-outline-primary.slider-btn.animated {
   padding: 15px 40px 15px;
   margin-left: 200px;
 }
+.contact-form-title{
+  padding-top: 39%;
+}
+.contact-info-area{
+  padding-left: 100px;
+  padding-top: 10%;
 
+}
+.breadcrumb-area  {
+  padding-top: 5%;
+}
+.map{
+  padding-bottom: 5%;
+}
+.tittle1 {
+  padding-bottom: 5%;
+}
+
+.send {
+  color: #fff;
+  padding: 24px 10px;
+  text-align: center;
+  width: 100%;
+  font-family: "Fontaw";
+  border: none;
+  margin-left: 100px;
+  background-color: #ce9676;
+  border-radius: 6px;
+  font-weight: bold;
+  opacity: 1;
+  border: solid 2.2px transparent;
+}
+
+
+.send:hover {
+  border: none solid 3px ;
+  width: 100%;
+  opacity: 0.6;
+  font-weight: bold;
+  transition: 0.4s;
+}

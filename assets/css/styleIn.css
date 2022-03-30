@@ -15,7 +15,6 @@ main{
 
 .bot{
     margin-left: 90%;
-    width: 50px;
     padding-bottom: 5%;
 }
 .border-bottom {
@@ -82,4 +81,6 @@ border-radius: 10px;
   background-color: #f7f9fc;
 } 
 
- 
+.textmutedxd{
+  color: #fff;
+}
