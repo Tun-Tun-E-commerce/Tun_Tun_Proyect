@@ -90,19 +90,19 @@
                                 <form class="contact-form-style padding-20-row-col" id="contact-form" action="https://htmlmail.hasthemes.com/tasnim/lauriel-two-mail.php" method="post">
                                     <div class="row">
                                         <div class="col-lg-8 col-md-12 col-12">
-                                            <input name="first_name" type="text" placeholder="Nombre*">
+                                            <input name="first_name" type="text" placeholder="Nombre*" required pattern="[a-zA-Z]+" maxlength="40"> 
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-12">
-                                            <input name="email_address" type="email" placeholder="Coreo Electronico*">
+                                            <input name="email_address" type="email" placeholder="Coreo Electronico* " required>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-12">
-                                            <input name="phone" type="text" placeholder="Celular*">
+                                            <input name="phone" type="text" placeholder="Celular*" required pattern="[0-9]+" minlength="6" maxlength="10">
+                                         </div>
+                                        <div class="col-lg-8 col-md-12 col-12">
+                                            <input name="contact_subject" type="text" placeholder="Tipo de Consulta*" required pattern="[a-zA-Z]+">
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-12">
-                                            <input name="contact_subject" type="text" placeholder="Tipo de Consulta*">
-                                        </div>
-                                        <div class="col-lg-8 col-md-12 col-12">
-                                            <textarea name="message" placeholder="Mensaje"></textarea>
+                                            <textarea name="message" placeholder="Mensaje" required></textarea>
                                         </div>
                                         <div class="col-lg-8 col-md-12 col-12">
                                             <button class="send" class="submit" type="submit">Enviar Mensaje</button>
