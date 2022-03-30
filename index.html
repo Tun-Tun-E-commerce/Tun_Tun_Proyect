@@ -67,19 +67,64 @@
                                         src="assets/images/icon-img/login.icon.png" alt="">
                                 </a>
                             </div>
-                            <div class="header-action-cart">
-                                <a href="#">
+                        </div>
+                        <div class="header-action-wrap">
+                            <div class="header-action-cart white-cart">
+                                <a class="cart-active" href="#">
                                     <img class="injectable" src="assets/images/icon-img/shop.icon.png" alt="">
                                     <span class="product-count">0</span>
                                 </a>
                             </div>
                         </div>
-                    </div>
+                        
+                    </div>      
                 </div>
             </div>
     </header>
     <!-- Header Section - End -->
-
+    
+<!-- mini cart start -->
+        <div class="sidebar-cart-active">
+            <div class="sidebar-cart-all">
+                <a class="cart-close" href="#"><i class="las la-times"></i></a>
+                <div class="cart-content">
+                    <h3>Shopping Cart</h3>
+                    <ul>
+                        <li class="single-product-cart">
+                            <div class="cart-img">
+                                <a href="product-details.html"><img src="assets/images/product/product-1.png" alt=""></a>
+                            </div>
+                            <div class="cart-title">
+                                <h4><a href="product-details.html">HOODED SWEATSHIRT</a></h4>
+                                <span> 1 × $39.99 	</span>
+                            </div>
+                            <div class="cart-delete">
+                                <a href="#"><i class="las la-trash"></i></a>
+                            </div>
+                        </li>
+                        <li class="single-product-cart">
+                            <div class="cart-img">
+                                <a href="product-details.html"><img src="assets/images/product/product-2.png" alt=""></a>
+                            </div>
+                            <div class="cart-title">
+                                <h4><a href="product-details.html">TEXTURED KNIT PANTS</a></h4>
+                                <span> 1 × $49.99	</span>
+                            </div>
+                            <div class="cart-delete">
+                                <a href="#"><i class="las la-trash"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cart-total">
+                        <h4>Subtotal: <span>$170.00</span></h4>
+                    </div>
+                    <div class="btn-style cart-checkout-btn">
+                        <a class="btn btn-outline-primary" href="cart.html">View cart</a>
+                        <a class="btn btn-outline-primary" href="checkout.html">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <!-- Carousel n1- Start -->
     <section class="slider">
@@ -1150,6 +1195,23 @@
         </div>
     </footer>
     <!-- Footer - End -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="row no-gutters">
+                    <div class="col-lg-5 col-md-12 col-12">
+                        <div class="quickview-img">
+                            <a href="product-details.html"><img src="assets/images/product-details/large-1.png" alt=""></a>
+                    </div>
+
+</div>
+<!-- Modal - End -->
 
     <!-- Global Vendor, plugins JS -->
     <script src="assets/js/code.js"></script>
