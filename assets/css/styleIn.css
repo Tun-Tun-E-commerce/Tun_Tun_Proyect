@@ -16,6 +16,7 @@ main{
 .bot{
     margin-left: 90%;
     padding-bottom: 5%;
+    width: 60px;
 }
 .border-bottom {
     border-bottom: 1px solid #dee2e6 !important;
