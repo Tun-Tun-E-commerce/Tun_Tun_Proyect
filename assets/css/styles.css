@@ -13,7 +13,11 @@ a.btn {
   margin-left: 40%;
 }
 
+header {
+  padding: 100px;
+}
 .slider {
+  
   background-color: #ce9977;
 }
 .slider-img {
