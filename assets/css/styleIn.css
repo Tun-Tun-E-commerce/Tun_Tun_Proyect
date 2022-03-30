@@ -8,7 +8,7 @@ body{
   background-color: #ce9676;
 }
 main{
-    background-image: url(/assets/images/bg/bgp.jpg);
+    background-image: url(/assets/images/bg/backgroundaaa.jpg);
     background-size: 600px;
 
   }
@@ -50,7 +50,6 @@ main{
   color: #fff;
   transition: 0.4s;
 }
-
 
 .link-secondary:hover{
   
