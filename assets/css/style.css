@@ -23909,7 +23909,7 @@ body {
  }
  
  .team-wrap .team-img img {
-   width: 100%;
+   width: 50%;
    -webkit-transition: all .5s ease 0s;
    -o-transition: all .5s ease 0s;
    transition: all .5s ease 0s;
