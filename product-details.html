@@ -60,15 +60,23 @@
                         <div class="header-action-wrap">
                             <div class="header-action-cart">
                                 <a href="login.html">
-                                    <img class="injectable product-img img-zoom mb-md-0"
-                                        src="assets/images/icon-img/login.icon.png" alt="">
-                                </a>
                             </div>
-                            <div class="header-action-cart">
-                                <a href="#">
+                            <div class="header-action-cart dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="injectable product-img img-zoom mb-md-0" src="assets/images/icon-img/login.icon.png" alt="">
+                                </a>
+                            
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="user-account.html">Cuenta</a></li>
+                                    <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-action-cart white-cart">
+                                <a class="cart-active" href="#">
                                     <img class="injectable" src="assets/images/icon-img/shop.icon.png" alt="">
                                     <span class="product-count">0</span>
                                 </a>
+                            </div>
                             </div>
 
 
@@ -77,7 +85,48 @@
                 </div>
             </div>
         </header>
-
+    <!-- mini cart start -->
+        <div class="sidebar-cart-active">
+            <div class="sidebar-cart-all">
+                <a class="cart-close" href="#"><i class="las la-times"></i></a>
+                <div class="cart-content">
+                    <h3>Mi carrito</h3>
+                    <ul>
+                        <li class="single-product-cart">
+                            <div class="cart-img">
+                                <a href="product-details.html"><img src="assets/images/product/product-1.png" alt=""></a>
+                            </div>
+                            <div class="cart-title">
+                                <h4><a href="product-details.html">PRODUCTO</a></h4>
+                                <span> 1 × $35.990 	</span>
+                            </div>
+                            <div class="cart-delete">
+                                <a href="#"><i class="las la-trash"></i></a>
+                            </div>
+                        </li>
+                        <li class="single-product-cart">
+                            <div class="cart-img">
+                                <a href="product-details.html"><img src="assets/images/product/product-2.png" alt=""></a>
+                            </div>
+                            <div class="cart-title">
+                                <h4><a href="product-details.html">PRODUCTO</a></h4>
+                                <span> 1 × $45.990	</span>
+                            </div>
+                            <div class="cart-delete">
+                                <a href="#"><i class="las la-trash"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cart-total">
+                        <h4>Subtotal: <span>$81.800</span></h4>
+                    </div>
+                    <div class="btn-style cart-checkout-btn">
+                        <a  class= "Bt-1" class="btn btn-outline-primary" href="Cart.html">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- mini cart end -->
 
         <div class="breadcrumb-area breadcrumb-padding-7">
             <div class="container">
@@ -210,14 +259,14 @@
         <div class="related-product section-padding-lr-1 pb-100">
             <div class="container-fluid">
                 <div class="section-title-4 mb-100 text-center">
-                    <h2>Productos Relacionados</h2>
+                    <h2>MÁS PRODUCTOS</h2>
                 </div>
                 <div class="related-product-active">
                     <div class="product-plr-1" data-aos="fade-up" data-aos-delay="10">
                         <div class="product-wrap">
                             <div class="product-img img-zoom mb-4">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-5.png" alt="">
+                                    <img class="default-img" src="assets/images/product/product-1.png" alt="">
                                 </a>
                                 <div class="product-action-wrap">
                                     <button title="Add To Cart"><img class="injectable"
@@ -225,9 +274,9 @@
                                 </div>
                             </div>
                             <div class="product-content text-center">
-                                <h3><a href="product-details.html">VERTICAL QUILTED OVERSHIRT</a></h3>
+                                <h3><a href="product-details.html">PRODUCTO EJEMPLO</a></h3>
                                 <div class="product-price">
-                                    <span>$39.99</span>
+                                    <span>$39.990</span>
                                 </div>
                             </div>
                         </div>
@@ -236,7 +285,7 @@
                         <div class="product-wrap">
                             <div class="product-img img-zoom mb-4">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-6.png" alt="">
+                                    <img class="default-img" src="assets/images/product/product-2.png" alt="">
                                 </a>
                                 <div class="product-action-wrap">
                                     <button title="Add To Cart"><img class="injectable"
@@ -244,9 +293,9 @@
                                 </div>
                             </div>
                             <div class="product-content text-center">
-                                <h3><a href="product-details.html">KNIT TECHNICAL FABRIC SNEAKERS</a></h3>
+                                <h3><a href="product-details.html">PRODUCTO EJEMPLO</a></h3>
                                 <div class="product-price">
-                                    <span>$39.99</span>
+                                    <span>$39.990</span>
                                 </div>
                             </div>
                         </div>
@@ -255,7 +304,7 @@
                         <div class="product-wrap">
                             <div class="product-img img-zoom mb-4">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-7.png" alt="">
+                                    <img class="default-img" src="assets/images/product/product-1.png" alt="">
                                 </a>
                                 <div class="product-action-wrap">
                                     <button title="Add To Cart"><img class="injectable"
@@ -263,9 +312,9 @@
                                 </div>
                             </div>
                             <div class="product-content text-center">
-                                <h3><a href="product-details.html">BOILED WOOL SWEATER</a></h3>
+                                <h3><a href="product-details.html">PRODUCTO EJEMPLO</a></h3>
                                 <div class="product-price">
-                                    <span>$39.99</span>
+                                    <span>$39.990</span>
                                 </div>
                             </div>
                         </div>
@@ -274,7 +323,7 @@
                         <div class="product-wrap">
                             <div class="product-img img-zoom mb-4">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-8.png" alt="">
+                                    <img class="default-img" src="assets/images/product/product-2.png" alt="">
                                 </a>
                                 <div class="product-action-wrap">
                                     <button title="Add To Cart"><img class="injectable"
@@ -282,9 +331,9 @@
                                 </div>
                             </div>
                             <div class="product-content text-center">
-                                <h3><a href="product-details.html">PRODUCTO-EJEMPLO</a></h3>
+                                <h3><a href="product-details.html">PRODUCTO EJEMPLO</a></h3>
                                 <div class="product-price">
-                                    <span>$39.99</span>
+                                    <span>$39.990</span>
                                 </div>
                             </div>
                         </div>
@@ -293,7 +342,7 @@
                         <div class="product-wrap">
                             <div class="product-img img-zoom mb-4">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="assets/images/product/product-4.png" alt="">
+                                    <img class="default-img" src="assets/images/product/product-1.png" alt="">
                                 </a>
                                 <div class="product-action-wrap">
                                     <button title="Add To Cart"><img class="injectable"
@@ -301,9 +350,9 @@
                                 </div>
                             </div>
                             <div class="product-content text-center">
-                                <h3><a href="product-details.html">OVERSIZED HOODED SWEATSHIRT</a></h3>
+                                <h3><a href="product-details.html">PRODUCTO EJEMPLO</a></h3>
                                 <div class="product-price">
-                                    <span>$39.99</span>
+                                    <span>$39.990</span>
                                 </div>
                             </div>
                         </div>
@@ -385,7 +434,9 @@
             </div>
         </div>
         <!-- Modal end -->
+        
         <!-- footer -->
+        <hr>
         <footer class="footer-16371">
             <div class="container">
                 <div class="row justify-content-center">
