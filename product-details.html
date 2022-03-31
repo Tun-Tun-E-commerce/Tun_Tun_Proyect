@@ -60,15 +60,23 @@
                         <div class="header-action-wrap">
                             <div class="header-action-cart">
                                 <a href="login.html">
-                                    <img class="injectable product-img img-zoom mb-md-0"
-                                        src="assets/images/icon-img/login.icon.png" alt="">
-                                </a>
                             </div>
-                            <div class="header-action-cart">
-                                <a href="#">
+                            <div class="header-action-cart dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="injectable product-img img-zoom mb-md-0" src="assets/images/icon-img/login.icon.png" alt="">
+                                </a>
+                            
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="user-account.html">Cuenta</a></li>
+                                    <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-action-cart white-cart">
+                                <a class="cart-active" href="#">
                                     <img class="injectable" src="assets/images/icon-img/shop.icon.png" alt="">
                                     <span class="product-count">0</span>
                                 </a>
+                            </div>
                             </div>
 
 
@@ -77,7 +85,48 @@
                 </div>
             </div>
         </header>
-
+    <!-- mini cart start -->
+        <div class="sidebar-cart-active">
+            <div class="sidebar-cart-all">
+                <a class="cart-close" href="#"><i class="las la-times"></i></a>
+                <div class="cart-content">
+                    <h3>Mi carrito</h3>
+                    <ul>
+                        <li class="single-product-cart">
+                            <div class="cart-img">
+                                <a href="product-details.html"><img src="assets/images/product/product-1.png" alt=""></a>
+                            </div>
+                            <div class="cart-title">
+                                <h4><a href="product-details.html">PRODUCTO</a></h4>
+                                <span> 1 × $35.990 	</span>
+                            </div>
+                            <div class="cart-delete">
+                                <a href="#"><i class="las la-trash"></i></a>
+                            </div>
+                        </li>
+                        <li class="single-product-cart">
+                            <div class="cart-img">
+                                <a href="product-details.html"><img src="assets/images/product/product-2.png" alt=""></a>
+                            </div>
+                            <div class="cart-title">
+                                <h4><a href="product-details.html">PRODUCTO</a></h4>
+                                <span> 1 × $45.990	</span>
+                            </div>
+                            <div class="cart-delete">
+                                <a href="#"><i class="las la-trash"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cart-total">
+                        <h4>Subtotal: <span>$81.800</span></h4>
+                    </div>
+                    <div class="btn-style cart-checkout-btn">
+                        <a  class= "Bt-1" class="btn btn-outline-primary" href="Cart.html">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- mini cart end -->
 
         <div class="breadcrumb-area breadcrumb-padding-7">
             <div class="container">
