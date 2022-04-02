@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es-co">
+<html lang="es">
 
 <head>
     <!-- Required meta tags -->
@@ -17,154 +17,117 @@
 
 <body >
     <!-- Header Section - Start -->
-    <header class="header-area-1 sticky-bar sticky-white-bg stick ">
-        <div class="container-fluid-1">
-            <div class="row" class="align-items-center">
-                <div class="col-4">
-                    <div class="header-action-cart">
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="logo-1 text-center">
-                        <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
-                    </div>
-                    <nav class="navbar navbar-expand-sm justify-content-center">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">INICIO</a>
-                            </li>
-    
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        </div>
+    <header class="border-bottom">
+        <a href="index.html"> <img class="imgL" src="./assets/images/logo/logo.png" alt="" ></a>    
     </header>
     <!-- Header Section - End -->
-    <div class="modal modal-signin position-static d-block py-5" tabindex="-1" role="dialog" id="modalSignin">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content rounded-5 shadow">
-                <div class="modal-header p-5 pb-4 border-bottom-0">
-                    <!-- <h5 class="modal-title">Modal title</h5> -->
-                    <h2 class="mb-0">¡Hola! </br> Ingresa tus datos para registrarte.</h2>
-                </div>
 
-                <div class="modal-body p-5 pt-0">
-                    <form class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label for="">Nombres..</label>
-                                <input type="text" required name="" class="form-control" pattern="[a-zA-Z]+"
-                                    maxlength="20" placeholder="Juan">
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="">Apellidos..</label>
-                                <input type="text" required name="" class="form-control" pattern="[a-zA-Z]+"
-                                    maxlength="20" placeholder="Rodriguez">
-                            </div>
-                        </div>
+    
+    <!-- Main Section - Start -->
+    <main class=" border-bottom">
+        <div class="modal modal-signin position-static d-block py-5" tabindex="-1" role="dialog" id="modalSignin">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-5 shadow">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                        <!-- <h5 class="modal-title">Modal title</h5> -->
+                        <h4 class="mb-0">¡Hola! Ingresa tus datos para registrarte</h4>
+                    </div>
 
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label for="">Correo Electronico..</label>
-                                <input type="email" required name="" class="form-control" placeholder="abc123@email.com">
+                    <div class="modal-body p-5 pt-0">
+                        <form class="container">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="">Nombres</label>
+                                    <input type="text" required name="" class="form-control" pattern="[a-zA-Z]+"   maxlength="20">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="">Apellidos</label>
+                                    <input type="text" required name="" class="form-control" pattern="[a-zA-Z]+" maxlength="20">
+                                </div>
                             </div>
-                            <div class="col-sm-6">
-                                <label for="">Teléfono..</label>
-                                <input type="text" required name="" class="form-control" pattern="[0-9]+"
-                                    minlength="6" maxlength="10" placeholder="123456789">
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="">Contraseña..</label>
-                                <input type="password" required name="" class="form-control" placeholder="*********">
-                            </div>
-                        <div class="col-sm-6">
-                            <label for="">Género..</label> <select class="form-select" aria-label="Default select example">
-                                <option value="1">Seleccione:</option>
-                                <option value="1">Hombre</option>
-                                <option value="2">Mujer</option>
-                                <option value="3">Otro</option>
-                            </select>
-                        </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label for="">Número de Documento..</label>
-                                <input type="text" required name="" class="form-control" pattern="[0-9]+" maxlength="10" placeholder="10326598">
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="">Tipo de documento</label> <select class="form-select"
-                                    aria-label="Default select example">
-                                    <option value="1">Seleccione:</option>
-                                    <option value="1">Cédula de Ciudadanía</option>
-                                    <option value="2">Cédula de Extranjería</option>
-                                    <option value="3">Tarjeta de Identidad</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br>
-                        <button class="Ingre" type="submit">Registrarse</button>
 
-                        <div class="form-check py-3">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Si le das Registrar, estarás de acuerdo con los términos de uso.
-                            </label>
-                        </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="">Correo Electronico</label>
+                                    <input type="email" required name="" class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="">Teléfono</label>
+                                    <input type="text" required name="" class="form-control" pattern="[0-9]+" minlength="6" maxlength="10">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="">Tipo de documento</label> <select class="form-select"
+                                        aria-label="Default select example">
+                                        <option value="1">Cédula de Ciudadanía</option>
+                                        <option value="2">Cédula de Extranjería</option>
+                                        <option value="3">Tarjeta de Identidad</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="">Número de Documento</label>
+                                    <input type="text" required name="" class="form-control" pattern="[0-9]+" maxlength="10">
+                                </div>
+                            </div>
+                            <br>
+                            <button class="Ingre"
+                                type="submit">Registrarse</button>
 
-                        <div class="text-center py-1">
-                            <label>¿Ya tienes cuenta?</label>
-                            <a href="login.html" class="link-secondary"> Iniciar Sesión</a>
-                        </div>
-                    </form>
+                            <div class="form-check py-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Si le das Registrar, estarás de acuerdo con los términos de uso.
+                                </label>
+                            </div>
+
+                            <div class="text-center py-1">
+                                <label>¿Ya tienes cuenta?</label>
+                                <a href="login.html" class="link-secondary"> Iniciar Sesión</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <div class="bot">
-        <a href="#">
-            <box-icon name='help-circle' type='class' animation='tada-hover' size='lg'></box-icon>
-        </a>
-    </div>
-    <!-- Main Section - Start -->
-    <main class=" border-bottom">
-        
+        </div>
+        <div class="bot">
+            <a href="#">
+                <box-icon name='help-circle' type='class' animation='tada' size='lg'></box-icon>
+            </a>
+        </div>
     </main>
+
     <!-- Main Section - End -->
     
 
-<!-- Footer Section - Start -->
-
-<div class="selec-1">
+    <!-- Footer Section - Start -->
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center ">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
             <div class="col-md-4 d-flex align-items-center">
                 <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
                     <svg class="bi" width="30" height="24">
                         <use xlink:href="#bootstrap" />
                     </svg>
                 </a>
-                <br><br><br>
-                <span class="tittleee">&copy; 2022 Tun-Tun</span>
+                <span class="text-muted">&copy; 2022 Tun-Tun</span>
             </div>
 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li class="ms-3"><a href="#">
-                        <box-icon name='instagram' type='logo' animation='tada-hover'></box-icon>
+                        <box-icon name='instagram' type='logo' animation='tada'></box-icon>
                     </a></li>
                 <li class="ms-3"><a href="#">
-                        <box-icon name='twitter' type='logo' animation='tada-hover'></box-icon>
+                        <box-icon name='twitter' type='logo' animation='tada'></box-icon>
                     </a></li>
                 <li class="ms-3"><a href="#">
-                        <box-icon name='facebook-circle' type='logo' animation='tada-hover'></box-icon>
+                        <box-icon name='facebook-circle' type='logo' animation='tada'></box-icon>
                     </a></li>
             </ul>
         </footer>
     </div>
-    <br><br>
     <!-- Footer Section - End -->
+
 
     <!-- CDN JavaScript Boostrap -->
 
