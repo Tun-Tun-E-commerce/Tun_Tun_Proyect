@@ -342,3 +342,30 @@ ul.dropdown-menu{
   margin: 500000000px;
 }
 
+.radas{
+  width:45%;
+  height:auto;
+}
+
+
+.Ingre-1{
+  padding: 20px ;
+  border: solid 2.2px transparent;
+  width: 100%;
+  background-color: #f7f4f4;
+  font-weight: bold;
+  border-radius: 25px;
+  color: rgb(14, 13, 13);
+  opacity: 1;
+}
+
+.Ingre-1:hover{
+  padding: 20px;
+  background-color: #000000;
+  width: 100%;
+  border: solid 2.2px ;
+  opacity: 0.5;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.5s;
+}

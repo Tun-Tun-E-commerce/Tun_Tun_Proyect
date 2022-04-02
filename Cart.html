@@ -176,67 +176,67 @@
             </div>
         </div>
 <div class="checkout-main-area pb-130">
-    <div class="container">
+    <div class="container" >
         <div class="checkout-wrap pt-30 ">
-            <div class="row">
+            <form  method="#" onsubmit="return validarRe()">           
+            <div class="row"> 
                 <div class="col-lg-7">
-                    <div class="billing-info-wrap ">
+                    <div class="billing-info-wrap" >
                         <h3>DETALLES DE FACTURACIÓN</h3>
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="billing-info mb-20">
                                     <label>Primer Nombre <abbr class="required" title="required">*</abbr></label>
-                                    <input type="text">
+                                    <input type="text"  id="nombre" name="nombre">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="billing-info mb-20">
                                     <label>Primer Apellido <abbr class="required" title="required">*</abbr></label>
-                                    <input type="text">
+                                    <input type="text" id="Apellido_R" name="Apellido_R" >
                                 </div>
                             </div>
                         
                             <div class="col-lg-12">
                                 <div class="billing-info mb-20">
                                     <label>Correo Electronico <abbr class="required" title="required">*</abbr></label>
-                                    <input type="text" placeholder="Ej:example@email.com">
+                                    <input type="text" placeholder="Ej:example@email.com" id="correo" name="correo">
                                 </div>
                                 
                             </div>
                             <div class="col-lg-12">
                                 <div class="billing-info mb-20">
-                                    <label>Direcciòn <abbr class="required" title="required">*</abbr></label>
-                                    <input class="billing-address" placeholder="Numero de Casa y Numero de Calle" type="text">
+                                    <label>Dirección <abbr class="required" title="required">*</abbr></label>
+                                    <input class="billing-address" placeholder="Numero de Casa y Numero de Calle" type="text" id="Dirección_R" name="Direccion_R">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="billing-info mb-20">
-                                    <label>Pueblo / Ciudad <abbr class="required" title="required">*</abbr></label>
-                                    <input type="text">
+                                    <label>Pueblo / Ciudad <abbr class="required"  title="required">*</abbr></label>
+                                    <input type="text" id="Pueblo_Ciud_R" name="Pueblo_Ciud_R">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="billing-info mb-20">
                                     <label>Codigo Postal  <abbr class="required" title="required">*</abbr></label>
-                                    <input type="text">
+                                    <input type="text" id="Cod_Post" name="Cod_Post">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="billing-info mb-20">
                                     <label>Celular o Telefono <abbr class="required" title="required">*</abbr></label>
-                                    <input type="text">
+                                    <input type="text"  id="teléfono" name="teléfono">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="billing-select mb-20">
                                     <label>Pais <abbr class="required" title="required">*</abbr></label>
-                                    <select>
-                                        <option>Seleccionar Pais</option>
-                                        <option>Colombia</option>
-                                        <option>Brasil</option>
-                                        <option>Argentina</option>
-                                        <option>EEUU</option>
-                                        <option>Canada</option>
+                                    <select id="pais" name="pais">
+                                        <option value="0">Seleccionar Pais</option>
+                                        <option value="1">Colombia</option>
+                                        <option value="2">Brasil</option>
+                                        <option value="3">Argentina</option>
+                                        <option value="4">Venezuela</option>
                                     </select>
                                 </div>
                             </div>
@@ -283,7 +283,7 @@
                                     <label for="payment_method_1">Transferencia Bancaria Directa</label>
                                     <div class="payment-box payment_method_bacs">
                                         <p>Realice su pago directamente en nuestra cuenta bancaria. 
-                                           Utilice su ID de pedido como referencia de pago.</p>
+                                        Utilice su ID de pedido como referencia de pago.</p>
                                     </div>
                                 </div>
                                 <div class="pay-top sin-payment">
@@ -308,11 +308,12 @@
                             </div>
                         </div>
                         <div  class="Place-order">
-                            <a  href="#">Realizar Pedido</a>
+                            <button class="Ingre-1" type="submit" onclick="registro()">Realizar Pedido</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </form>
         </div>
     </div>
 </div>
@@ -390,5 +391,8 @@
     <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/alerts.js"></script>
+    <script src="assets/js/sweetalert2.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
