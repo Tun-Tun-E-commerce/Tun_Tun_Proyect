@@ -124,6 +124,7 @@ function validarac() {
     var confirmpwd = document.getElementById("confirmpwd").value;
     expresión1 = /\w+@\w+\.[a-zA-Z]/;
     
+    
     if(names==0){
         Swal.fire("Ingrese el nombre");
         return false;
@@ -141,7 +142,7 @@ function validarac() {
         return false;
     }
     if(display_name==0){
-        Swal.fire("Ingrese el nombre");
+        Swal.fire("Ingrese el nombre Usuario");
         return false;
     }
     if (display_name.length>15){
@@ -169,6 +170,25 @@ function validarac() {
         return false;
     }
     
+    if (names && lastn && display_name &&  email && currentpwd &&  newpwd &&  confirmpwd && expresión1) {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+          })
+          
+          Toast.fire({
+            icon: 'success',
+            title: 'Datos Actualizados Exitosamente'
+          })
+      return false;
+    }
 
 }
 
