@@ -1,6 +1,6 @@
 function validar(){
 
-    var nombre, Apellido_R, correo, contraseña, teléfono, documento,  expresión , genero , tipo_d;
+    var nombre, Apellido_R, correo, contraseña, teléfono, documento,  expresión1,expresión2 ,expresión3,  genero , tipo_d;
     var nombre = document.getElementById('nombre').value;
     var Apellido_R = document.getElementById("Apellido_R").value;
     var correo = document.getElementById("correo").value;
@@ -72,9 +72,11 @@ function validar(){
 
 }
 
+
 function validarl(){
 
     var loginl, contraseñal;
+
     var loginl = document.getElementById('loginl').value;
     var contraseñal = document.getElementById("contraseñal").value;
     if(loginl==0){
