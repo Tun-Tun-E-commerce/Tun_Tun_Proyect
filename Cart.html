@@ -48,7 +48,7 @@
                         <nav class="navbar navbar-expand-sm justify-content-center">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">INICIO</a>
+                                    <a class="nav-link" href="index.html">INICIO</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="product.html">PRODUCTOS</a>
@@ -59,23 +59,29 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-4">
-                        <div class="header-action-wrap">
-                            <div class="header-action-cart">
-                                <a href="login.html">
-                                    <img class="injectable product-img img-zoom mb-md-0"
-                                        src="assets/images/icon-img/login.icon.png" alt="">
-                                </a>
-                            </div>
-
-                            <div class="header-action-cart white-cart">
-                                <a class="cart-active" href="#">
-                                    <img class="injectable" src="assets/images/icon-img/shop.icon.png" alt="">
-                                    <span class="product-count">0</span>
-                                </a>
-                            </div>
+                <div class="col-4">
+                    <div class="header-action-wrap">
+                        <div class="header-action-cart">
+                            <a href="login.html">
                         </div>
-                        
+                        <div class="header-action-cart dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="injectable product-img img-zoom mb-md-0" src="assets/images/icon-img/login.icon.png" alt="">
+                            </a>
+                
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="user-account.html">Cuenta</a></li>
+                                <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-action-cart white-cart">
+                            <a class="cart-active" href="#">
+                                <img class="injectable" src="assets/images/icon-img/shop.icon.png" alt="">
+                                <span class="product-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                         
                     </div>      
                 </div>
