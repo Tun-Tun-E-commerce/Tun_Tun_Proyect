@@ -194,16 +194,21 @@ function validarac() {
 
 function revalidar(){
 
-    var nombrer, Apellidor, correor, direccionr, rpueblo , Cod_Post, teléfonore,  expresión1, expresión2;
+    var nombrer, Apellidor, correor, direccionr, teléfonore, Cod_Post, rpueblo , card, date, cvv, expresión1, expresión2 , expresión4, expresión5;
     var nombrer = document.getElementById('nombrer').value;
     var Apellidor = document.getElementById("Apellidor").value;
     var correor = document.getElementById("correor").value;
     var direccionr = document.getElementById("direccionr").value;
+    var teléfonore = document.getElementById("teléfonore").value;
     var rpueblo = document.getElementById("rpueblo").value;
     var Cod_Post = document.getElementById("Cod_Post").value;
-    var teléfonore = document.getElementById("teléfonore").value;
+    var card = document.getElementById("card").value;
+    var date = document.getElementById("date").value;
+    var cvv = document.getElementById("cvv").value;
     expresión1 = /\w+@\w+\.[a-zA-Z]/;
     expresión2 = /\d{7,10}$/;
+    expresión4 = /\d{16,19}$/;
+    expresión5 = /\d{3}$/;
     
     if(nombrer==0){
         Swal.fire("Ingrese el nombre");
@@ -214,7 +219,7 @@ function revalidar(){
         return false;
     }
     if(Apellidor==0){
-        Swal.fire("Ingrese el un apellido");
+        Swal.fire("Ingrese un apellido");
         return false;
     }
     if (Apellidor.length>20){
@@ -233,24 +238,44 @@ function revalidar(){
         Swal.fire("Ingrese su dirección");
         return false;
     }
-    if(rpueblo==0){
-        Swal.fire("Ingrese su Pueblo / Ciudad");
-        return false;
-    }
-    if(Cod_Post==0){
-        Swal.fire("Ingrese su codigo postal");
-        return false;
-    }
     if(teléfonore==0){
         Swal.fire("Ingrese un número de teléfono");
         return false;
     }
-    if(!expresión2.test(teléfono)){
+    if(!expresión2.test(teléfonore)){
         Swal.fire("El número de teléfono no es valido");
         return false;
     }   
+    if(Cod_Post==0){
+        Swal.fire("Ingrese su codigo postal");
+        return false;
+    }
+    if(rpueblo==0){
+        Swal.fire("Ingrese su ciudad");
+        return false;
+    }
+    if(card==0){
+        Swal.fire("Ingrese un número de teléfono");
+        return false;
+    }
+    if(!expresión4.test(card)){
+        Swal.fire("El número de tarjeta no es valido");
+        return false;
+    }
+    if(date==0){
+        Swal.fire("Ingrese la fecha de su tarjeta");
+        return false;
+    }
+    if(cvv==0){
+        Swal.fire("Ingrese el numero de seguridad de la tarjeta");
+        return false;
+    }
+    if(!expresión5.test(cvv)){
+        Swal.fire("El número cvv de la tarjeta no es valido");
+        return false;
+    }
 
-    if (nombrer && Apellidor && correor && direccionr && rpueblo && Cod_Post && teléfonore && expresión1 && expresión2) {
+    if (nombrer && Apellidor && correor && direccionr && teléfonore && Cod_Post && rpueblo  && card && date && cvv && expresión1 && expresión2 && expresión4) {
         const Toast = Swal.mixin({
             toast: true,
             position: 'top-end',
@@ -265,7 +290,7 @@ function revalidar(){
         
         Toast.fire({
             icon: 'success',
-            title: 'Datos Actualizados Exitosamente'
+            title: 'Datos Agregdos Exitosamente'
         })
     return false;
     }
