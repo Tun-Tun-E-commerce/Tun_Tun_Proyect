@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css">
     <!-- Custom CSS -->
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Admin/css/stylesadmin.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 
@@ -55,7 +56,7 @@
                     </a>
                     <!-- End Logo -->
                     <!-- toggle and nav items -->
-                    <a class="nav-toggler waves-effect waves-light text-dark d-block d-md-none"
+                    <a class="nav-toggler waves-effect waves-light text-dark d-block d-md-none" 
                         href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
                 </div>
                 <!-- End Logo -->
@@ -66,7 +67,7 @@
                         <li>
                             <a class="profile-pic" href="#">
                                 <img src="plugins/images/users/varun.jpg" alt="user-img" width="36"
-                                    class="img-circle"><span class="text-white font-medium">Admin</span></a>
+                                    class="img-circle"><span class="text-dark font-medium">Admin</span></a>
                         </li>
                         <!-- User profile and search -->
                     </ul>
@@ -78,7 +79,7 @@
         <!-- Aside bar - Start-->
         <aside class="left-sidebar" data-sidebarbg="skin6">
             <!-- Sidebar scroll-->
-            <div class="scroll-sidebar">
+            <div class="scroll-sidebar scrollsa">
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
@@ -86,7 +87,7 @@
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/index.html"
                                 aria-expanded="false">
                                 <i class="bi bi-arrow-left"></i>
-                                <span class="hide-menu">Volver al inicio</span>
+                                <span class="hide-menu bg-transparen">Volver al inicio</span>
                             </a>
                         </li>
                         <!-- User Profile-->
@@ -161,11 +162,11 @@
             </div>
             <!-- End Bread crumb and right sidebar toggle -->
             <!-- Container fluid  -->
-            <div class="container-fluid">
+            <div class="container-fluid bg-tuntun">
                 <!-- Graficas -->
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-12">
-                        <div class="white-box analytics-info">
+                        <div class="white-box rounded-2 analytics-info" id>
                             <h3 class="box-title">Total de visitas anónimas </h3>
                             <ul class="list-inline two-part d-flex align-items-center mb-0">
                                 <li>
@@ -178,7 +179,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
-                        <div class="white-box analytics-info">
+                        <div class="white-box rounded-2 analytics-info">
                             <h3 class="box-title">Ventas hechas</h3>
                             <ul class="list-inline two-part d-flex align-items-center mb-0">
                                 <li>
@@ -191,7 +192,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
-                        <div class="white-box analytics-info">
+                        <div class="white-box rounded-2 analytics-info">
                             <h3 class="box-title">Vistas de personas logueadas</h3>
                             <ul class="list-inline two-part d-flex align-items-center mb-0">
                                 <li>
@@ -208,10 +209,10 @@
                 <!-- Tabla de compras recientes -->
                 <div class="row">
                     <div class="col-md-12 col-lg-12 col-sm-12">
-                        <div class="white-box rounded">
+                        <div class="white-box pe-none rounded-2 rounded">
                             <h3 class="box-title mb-0">Compras recientes</h3>
                             <div class="table-responsive">
-                                <table class="table no-wrap">
+                                <table class="table no-wrap pe-auto">
                                     <thead>
                                         <tr>
                                             <th class="border-top-0">ID</th>
@@ -224,7 +225,7 @@
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td class="txt-oflo">Santiago</td>
+                                            <td class="txt-oflo">Alberto</td>
                                             <td>Vendido</td>
                                             <td class="txt-oflo">01/01/2022</td>
                                             <td><span class="text-success">10.000
@@ -291,17 +292,17 @@
                 <div class="row">
                     <!-- .col -->
                     <div class="col-md-12 col-lg-8 col-sm-12">
-                        <div class="card white-box p-0">
+                        <div class="card white-box rounded-2 p-0">
                             <div class="card-body">
                                 <h3 class="box-title mb-0">Inquietudes recientes</h3>
                             </div>
                             <div class="comment-widgets">
                                 <!-- Comment Row -->
-                                <div class="d-flex flex-row comment-row p-3 mt-0">
-                                    <div class="p-2"><img src="plugins/images/users/varun.jpg" alt="user" width="50"
+                                <div class="d-flex flex-row pe-auto comment-row p-3 mt-0">
+                                    <div class="p-2"><img src="plugins/images/users/1.jpg" alt="user" width="50"
                                             class="rounded-circle"></div>
                                     <div class="comment-text ps-2 ps-md-3 w-100">
-                                        <h5 class="font-medium">Santiago</h5>
+                                        <h5 class="font-medium">Santiago Alberto</h5>
                                         <span class="mb-3 d-block">Lorem Ipsum is simply dummy text of the printing and
                                             type setting industry.It has survived not only five centuries. </span>
                                         <div class="comment-footer d-md-flex align-items-center">
@@ -313,9 +314,9 @@
                                 </div>
                                 <!-- Comment Row -->
                                 <div class="d-flex flex-row comment-row p-3">
-                                    <div class="p-2"><img src="plugins/images/users/genu.jpg" alt="user" width="50"
+                                    <div class="p-2"><img src="plugins/images/users/d2.jpg" alt="user" width="50"
                                             class="rounded-circle"></div>
-                                    <div class="comment-text ps-2 ps-md-3 active w-100">
+                                    <div class="comment-text pe-auto ps-2 ps-md-3 active w-100">
                                         <h5 class="font-medium">Karen</h5>
                                         <span class="mb-3 d-block">Lorem Ipsum is simply dummy text of the printing and
                                             type setting industry.It has survived not only five centuries. </span>
@@ -329,10 +330,10 @@
                                 </div>
                                 <!-- Comment Row -->
                                 <div class="d-flex flex-row comment-row p-3">
-                                    <div class="p-2"><img src="plugins/images/users/ritesh.jpg" alt="user" width="50"
+                                    <div class="p-2"><img src="plugins/images/users/d3.jpg" alt="user" width="50"
                                             class="rounded-circle"></div>
-                                    <div class="comment-text ps-2 ps-md-3 w-100">
-                                        <h5 class="font-medium">Diego</h5>
+                                    <div class="comment-text pe-auto ps-2 ps-md-3 w-100">
+                                        <h5 class="font-medium">Michael</h5>
                                         <span class="mb-3 d-block">Lorem Ipsum is simply dummy text of the printing and
                                             type setting industry.It has survived not only five centuries. </span>
                                         <div class="comment-footer d-md-flex align-items-center">
@@ -349,9 +350,9 @@
 
                     <!-- Ultimas Personas -->
                     <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="card white-box p-0">
-                            <div class="card-heading">
-                                <h3 class="box-title mb-0">Últimas personas</h3>
+                        <div class="card white-box rounded-2 p-0">
+                            <div class="card-heading rounded-2">
+                                <h3 class="box-title rounded-2 mb-0">Últimas personas</h3>
                             </div>
                             <div class="card-body">
                                 <ul class="chatonline">
@@ -365,9 +366,9 @@
                                             </button>
                                         </div>
                                         <a href="javascript:void(0)" class="d-flex align-items-center"><img
-                                                src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle">
+                                                src="plugins/images/users/d1.jpg" alt="user-img" class="img-circle">
                                             <div class="ms-2">
-                                                <span class="text-dark">Santiago <small
+                                                <span class="text-dark">Jose <small
                                                         class="d-block text-muted d-block">Offline</small></span>
                                             </div>
                                         </a>
@@ -382,7 +383,7 @@
                                             </button>
                                         </div>
                                         <a href="javascript:void(0)" class="d-flex align-items-center"><img
-                                                src="plugins/images/users/genu.jpg" alt="user-img" class="img-circle">
+                                                src="plugins/images/users/d2.jpg" alt="user-img" class="img-circle">
                                             <div class="ms-2">
                                                 <span class="text-dark">Karen
                                                     <small class="d-block text-muted">Offline</small></span>
@@ -399,9 +400,9 @@
                                             </button>
                                         </div>
                                         <a href="javascript:void(0)" class="d-flex align-items-center"><img
-                                                src="plugins/images/users/ritesh.jpg" alt="user-img" class="img-circle">
+                                                src="plugins/images/users/d3.jpg" alt="user-img" class="img-circle">
                                             <div class="ms-2">
-                                                <span class="text-dark">Diego
+                                                <span class="text-dark">Michael
                                                     <small class="d-block text-muted">Offline</small></span>
                                             </div>
                                         </a>
