@@ -239,22 +239,21 @@
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Agregar Categoria</h5>
                             </div>
-                            <form action="codeinventario.php" method="POST">
+                            <form onsubmit="return validarca()">
                                 <div class="modal-body">
                                     <div class="form-group">
                                         <label> ID </label>
-                                        <input type="text" class="form-control" placeholder="Ingresar ID" required>
+                                        <input name="sid" id="sid" type="text" class="form-control" placeholder="Ingresar ID" >
                                     </div>
                                     <div class="form-group">
                                         <label> Nombre </label>
-                                        <input type="text" class="form-control" placeholder="Ingresar Nombre" required>
+                                        <input name="naa" id="naa" type="text" class="form-control" placeholder="Ingresar Nombre" >
                                     </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="submit" name="ingresarInventario"
-                                        class="btn btn-success">Insertar</button>
+                                    <button type="submit" class="btn btn-success" onclick="validarca()">Insertar</button>
                                 </div>
                             </form>
 
@@ -270,22 +269,21 @@
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Editar Categoria</h5>
                             </div>
-                            <form action="codeinventario.php" method="POST">
+                            <form onsubmit="return cavalidar()">
                                 <div class="modal-body">
                                     <div class="form-group">
                                         <label> ID </label>
-                                        <input type="text" class="form-control" placeholder="Ingresar ID" required>
+                                        <input name="sidf" id="sidf" type="text" class="form-control" placeholder="Ingresar ID" >
                                     </div>
                                     <div class="form-group">
                                         <label> Nombre </label>
-                                        <input type="text" class="form-control" placeholder="Ingresar Nombre" required>
+                                        <input name="naaf" id="naaf" type="text" class="form-control" placeholder="Ingresar Nombre" >
                                     </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="submit" name="ingresarInventario"
-                                        class="btn btn-success">Insertar</button>
+                                    <button type="submit"class="btn btn-success" onclick="cavalidar()">Insertar</button>
                                 </div>
                             </form>
 
@@ -309,7 +307,12 @@
         <!--Menu sidebar -->
         <script src="js/sidebarmenu.js"></script>
         <!--Custom JavaScript -->
+        <script src="/Admin/js/alertsadmin.js"></script>
+        <script src="/Admin/js/validaradmin.js"></script>
         <script src="js/custom.js"></script>
+        <script src="/Admin/js/sweetalert2.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!--This page JavaScript -->
         <!--chartis chart-->
         <script src="plugins/bower_components/chartist/dist/chartist.min.js"></script>

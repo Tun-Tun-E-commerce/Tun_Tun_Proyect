@@ -67,3 +67,159 @@ function validarad() {
     }
 
 }
+function validarproca(){
+
+    
+var ids, na, ca, fe, pr;
+var ids = document.getElementById('ids').value;
+var na = document.getElementById('na').value;
+var ca = document.getElementById('ca').value;
+var fe = document.getElementById('fe').value;
+var pr = document.getElementById('pr').value;
+
+if(ids==0) {
+    Swal.fire("Ingrese el id del producto");
+    return false;
+}
+if(na==0) {
+    Swal.fire("Ingrese el nombre del producto  ");
+    return false;
+}
+if(ca==0) {
+    Swal.fire("Ingrese la cantidad del producto  ");
+    return false;
+}
+if(fe==0) {
+    Swal.fire("Ingrese la fecha del producto  ");
+    return false;
+}
+if(pr==0) {
+    Swal.fire("Ingrese  el precio del producto ");
+    return false;
+}
+
+if (ids && na && ca && fe && pr ) {
+const Toast = Swal.fire({
+    title: 'Quiere guardar los cambios?',
+    showDenyButton: true,
+    showCancelButton: false,
+    confirmButtonText: 'Guardar',
+    denyButtonText: `No guardar`,
+    }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+        Swal.fire('Guardado!', '', 'success')
+    } else if (result.isDenied) {
+        Swal.fire('No se guardaron! ', '', 'canceled')
+    }})
+    return false
+}}
+function procavalidar(){
+
+var idsf, naf, caf, fef, prf;
+var idsf = document.getElementById('idsf').value;
+var naf = document.getElementById('naf').value;
+var caf = document.getElementById('caf').value;
+var fef = document.getElementById('fef').value;
+var prf = document.getElementById('prf').value;
+
+if(idsf==0) {
+    Swal.fire("Ingrese el id del producto");
+    return false;
+}
+if(naf==0) {
+    Swal.fire("Ingrese el nombre del producto  ");
+    return false;
+}
+if(caf==0) {
+    Swal.fire("Ingrese la cantidad del producto  ");
+    return false;
+}
+if(fef==0) {
+    Swal.fire("Ingrese la fecha del producto  ");
+    return false;
+}
+if(prf==0) {
+    Swal.fire("Ingrese  el precio del producto ");
+    return false;
+}
+
+if (idsf && naf && caf && fef && prf ) {
+const Toast = Swal.fire({
+    title: 'Quiere guardar los cambios?',
+    showDenyButton: true,
+    showCancelButton: false,
+    confirmButtonText: 'Guardar',
+    denyButtonText: `No guardar`,
+    }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+        Swal.fire('Guardado!', '', 'success')
+    } else if (result.isDenied) {
+        Swal.fire('No se guardaron! ', '', 'canceled')
+    }})
+    return false
+}}
+
+function validarca(){
+
+var sid, naa;
+var sid= document.getElementById('sid').value;
+var naa = document.getElementById('naa').value;
+
+
+if(sid==0) {
+    Swal.fire("Ingrese el id de la categoria");
+    return false;
+}
+if(naa==0) {
+    Swal.fire("Ingrese el nombre de la categoria");
+    return false;
+}
+if (sid && naa) {
+const Toast = Swal.fire({
+    title: 'Quiere guardar los cambios?',
+    showDenyButton: true,
+    showCancelButton: false,
+    confirmButtonText: 'Guardar',
+    denyButtonText: `No guardar`,
+    }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+        Swal.fire('Guardado!', '', 'success')
+    } else if (result.isDenied) {
+        Swal.fire('No se guardaron! ', '', 'canceled')
+    }})
+    return false
+}}
+function cavalidar(){
+
+var sidf, naaf;
+var sidf= document.getElementById('sidf').value;
+var naaf = document.getElementById('naaf').value;
+
+
+if(sidf==0) {
+    Swal.fire("Ingrese el id de la categoria");
+    return false;
+}
+if(naaf==0) {
+    Swal.fire("Ingrese el nombre de la categoria");
+    return false;
+}
+if (sidf && naaf) {
+const Toast = Swal.fire({
+    title: 'Quiere guardar los cambios?',
+    showDenyButton: true,
+    showCancelButton: false,
+    confirmButtonText: 'Guardar',
+    denyButtonText: `No guardar`,
+    }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+        Swal.fire('Guardado!', '', 'success')
+    } else if (result.isDenied) {
+        Swal.fire('No se guardaron! ', '', 'canceled')
+    }})
+    return false
+}}

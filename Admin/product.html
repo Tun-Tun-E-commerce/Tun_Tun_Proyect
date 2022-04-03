@@ -284,35 +284,35 @@
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Agregar Producto</h5>
                             </div>
-                            <form action="codeinventario.php" method="POST">
+                            <form onsubmit= "return validarproca()">
                                 <div class="modal-body">
                                     <div class="form-group">
                                         <label> ID </label>
-                                        <input type="text" class="form-control" placeholder="Ingresar ID" required>
+                                        <input name="ids" id="ids" type="text" class="form-control" placeholder="Ingresar ID" >
                                     </div>
                                     <div class="form-group">
                                         <label> Nombre </label>
-                                        <input type="text" class="form-control" placeholder="Ingresar Nombre" required>
+                                        <input name="na" id="na" type="text" class="form-control" placeholder="Ingresar Nombre" >
                                     </div>
                                     <div class="form-group">
                                         <label> Cantidad </label>
-                                        <input type="text" class="form-control" placeholder="Ingresar Cantidad"
-                                            required>
+                                        <input name="ca" id="ca" type="text" class="form-control" placeholder="Ingresar Cantidad"
+                                            >
                                     </div>
                                     <div class="form-group">
                                         <label> Fecha </label>
-                                        <input type="text" class="form-control" placeholder="Ingresar Fecha" required>
+                                        <input name="fe" id="fe" type="text" class="form-control" placeholder="Ingresar Fecha" >
                                     </div>
                                     <div class="form-group">
                                         <label> Precio </label>
-                                        <input type="text" class="form-control" placeholder="Ingresar Precio" required>
+                                        <input name="pr" id="pr" type="text" class="form-control" placeholder="Ingresar Precio" >
                                     </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="submit" name="ingresarInventario"
-                                        class="btn btn-success">Insertar</button>
+                                    <button type="submit"
+                                        class="btn btn-success" onclick="validarproca()">Insertar</button>
                                 </div>
                             </form>
 
@@ -328,35 +328,33 @@
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Editar Producto</h5>
                             </div>
-                            <form action="codeinventario.php" method="POST">
+                            <form onsubmit= "return procavalidar()">
                                 <div class="modal-body">
                                     <div class="form-group">
                                         <label> ID </label>
-                                        <input type="text" class="form-control" placeholder="Ingresar ID" required>
+                                        <input name="idsf" id="idsf" type="text" class="form-control" placeholder="Ingresar ID" >
                                     </div>
                                     <div class="form-group">
                                         <label> Nombre </label>
-                                        <input type="text" class="form-control" placeholder="Ingresar Nombre" required>
+                                        <input name="naf" id="naf" type="text" class="form-control" placeholder="Ingresar Nombre" >
                                     </div>
                                     <div class="form-group">
                                         <label> Cantidad </label>
-                                        <input type="text" class="form-control" placeholder="Ingresar Cantidad"
-                                            required>
+                                        <input name="caf" id="caf" type="text" class="form-control" placeholder="Ingresar Cantidad"
+                                            >
                                     </div>
                                     <div class="form-group">
                                         <label> Fecha </label>
-                                        <input type="text" class="form-control" placeholder="Ingresar Fecha" required>
+                                        <input name="fef" id="fef" type="text" class="form-control" placeholder="Ingresar Fecha" >
                                     </div>
                                     <div class="form-group">
                                         <label> Precio </label>
-                                        <input type="text" class="form-control" placeholder="Ingresar Precio" required>
+                                        <input name="prf" id="prf" type="text" class="form-control" placeholder="Ingresar Precio" >
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="submit" name="ingresarInventario"
-                                        class="btn btn-success">Editar</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="submit" class="btn btn-success" onclick="procavalidar()">Editar</button>
                                 </div>
                             </form>
 
@@ -409,7 +407,12 @@
         <!--Menu sidebar -->
         <script src="js/sidebarmenu.js"></script>
         <!--Custom JavaScript -->
+        <script src="/Admin/js/alertsadmin.js"></script>
+        <script src="/Admin/js/validaradmin.js"></script>
         <script src="js/custom.js"></script>
+        <script src="/Admin/js/sweetalert2.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!--This page JavaScript -->
         <!--chartis chart-->
         <script src="plugins/bower_components/chartist/dist/chartist.min.js"></script>
