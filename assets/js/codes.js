@@ -178,64 +178,62 @@ function validarac() {
             timer: 3000,
             timerProgressBar: true,
             didOpen: (toast) => {
-              toast.addEventListener('mouseenter', Swal.stopTimer)
-              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
             }
-          })
-          
-          Toast.fire({
+        })
+        
+        Toast.fire({
             icon: 'success',
             title: 'Datos Actualizados Exitosamente'
-          })
-      return false;
+        })
+    return false;
     }
 
 }
 
-function validarRe(){
+function revalidar(){
 
-    var nombre, Apellido_R, correo, Direcciòn_R, teléfono, Pueblo_Ciud_R , genero , pais , expresión1, expresión2, expresión3;
-    var nombre = document.getElementById('nombre').value;
-    var Apellido_R = document.getElementById("Apellido_R").value;
-    var correo = document.getElementById("correo").value;
-    var Dirección_R = document.getElementById("Dirección_R").value;
-    var teléfono = document.getElementById("teléfono").value;
-    var Pueblo_Ciud_R = document.getElementById("Pueblo_Ciud_R").value;
+    var nombrer, Apellidor, correor, direccionr, rpueblo , Cod_Post, teléfonore,  expresión1, expresión2;
+    var nombrer = document.getElementById('nombrer').value;
+    var Apellidor = document.getElementById("Apellidor").value;
+    var correor = document.getElementById("correor").value;
+    var direccionr = document.getElementById("direccionr").value;
+    var rpueblo = document.getElementById("rpueblo").value;
     var Cod_Post = document.getElementById("Cod_Post").value;
-    var pais = document.getElementById("pais").value;
+    var teléfonore = document.getElementById("teléfonore").value;
     expresión1 = /\w+@\w+\.[a-zA-Z]/;
     expresión2 = /\d{7,10}$/;
-    expresión3 = /\d$/;
     
-    if(nombre==0){
+    if(nombrer==0){
         Swal.fire("Ingrese el nombre");
         return false;
     }
-    if (nombre.length>15){
+    if (nombrer.length>15){
         Swal.fire("El nombre es muy largo");
         return false;
     }
-    if(Apellido_R==0){
+    if(Apellidor==0){
         Swal.fire("Ingrese el un apellido");
         return false;
     }
-    if (Apellido_R.length>20){
+    if (Apellidor.length>20){
         Swal.fire("El apellido es muy largo");
         return false;
     }
-    if(correo==0){
+    if(correor==0){
         Swal.fire("Ingrese un correo");
         return false;
     }
-    if(!expresión1.test(correo)){
+    if(!expresión1.test(correor)){
         Swal.fire("El correo no es valido");
         return false;
     }
-    if(Dirección_R==0){
+    if(direccionr==0){
         Swal.fire("Ingrese su dirección");
         return false;
     }
-    if(Pueblo_Ciud_R==0){
+    if(rpueblo==0){
         Swal.fire("Ingrese su Pueblo / Ciudad");
         return false;
     }
@@ -243,11 +241,7 @@ function validarRe(){
         Swal.fire("Ingrese su codigo postal");
         return false;
     }
-    if(!expresión2.test(teléfono)){
-        Swal.fire("El número del codigo postal  no es valido");
-        return false;
-    } 
-    if(teléfono==0){
+    if(teléfonore==0){
         Swal.fire("Ingrese un número de teléfono");
         return false;
     }
@@ -255,13 +249,24 @@ function validarRe(){
         Swal.fire("El número de teléfono no es valido");
         return false;
     }   
-    if(contraseña==0){
-        Swal.fire("Ingrese una contraseña");
-        return false;
-    }
-    if(pais==0){
-        Swal.fire("Debe seleccionar un pais");
-        return false;
 
+    if (nombrer && Apellidor && correor && direccionr && rpueblo && Cod_Post && teléfonore && expresión1 && expresión2) {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+        
+        Toast.fire({
+            icon: 'success',
+            title: 'Datos Actualizados Exitosamente'
+        })
+    return false;
     }
 }
