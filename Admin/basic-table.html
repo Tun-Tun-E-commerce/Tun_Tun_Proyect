@@ -177,6 +177,7 @@
                                             <th class="border-top-0">Nombres</th>
                                             <th class="border-top-0">Contraseña</th>
                                             <th class="border-top-0">Telefeno</th>
+                                            <th class="border-top-0">Estado</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -185,37 +186,69 @@
                                             <td>Santiago Rodriguez</td>
                                             <td>2132easd12</td>
                                             <td>3213323123</td>
+                                            <td><div class="dropdown">
+                                                <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Elegir Estado
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                  <li><a class="dropdown-item" href="#">Activar</a></li>
+                                                  <li><a class="dropdown-item" href="#">Desactivar</a></li>
+                                                  
+                                                </ul>
+                                              </div></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
                                             <td>Miguel Henao</td>
                                             <td>1233ddasd2</td>
                                             <td>3312223123</td>
+                                            <td><div class="dropdown">
+                                                <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Elegir Estado
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                  <li><a class="dropdown-item" href="#">Activar</a></li>
+                                                  <li><a class="dropdown-item" href="#">Desactivar</a></li>
+                                                  
+                                                </ul>
+                                              </div></td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>Karen Moreno</td>
                                             <td>222ddd222</td>
                                             <td>2233231233</td>
+                                            <td><div class="dropdown">
+                                                <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Elegir Estado
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                  <li><a class="dropdown-item" href="#">Activar</a></li>
+                                                  <li><a class="dropdown-item" href="#">Desactivar</a></li>
+                                                  
+                                                </ul>
+                                              </div></td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
                                             <td>Valentina Ramirez</td>
                                             <td>222334sda</td>
                                             <td>3338697722</td>
+                                            <td><div class="dropdown">
+                                                <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Elegir Estado
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                  <li><a class="dropdown-item" href="#">Activar</a></li>
+                                                  <li><a class="dropdown-item" href="#">Desactivar</a></li>
+                                                  
+                                                </ul>
+                                              </div></td>
                                         </tr>
                                     </tbody>
                                 </table>
                                 <div class="text-center">
                                     <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                                        data-bs-target="#agregarP">
-                                        Agregar
-                                    </button>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#editarP">
-                                        Editar
-                                    </button>
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Reporte</button>
                                 </div>
@@ -237,74 +270,9 @@
 
 
         <!-- Modal Agregar -->
-        <div class="modal fade" id="agregarP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Añadir Registro</h5>
-                    </div>
-                    <form action="codeinventario.php" method="POST">
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label> ID </label>
-                                <input type="text" class="form-control" placeholder="Ingresar id" required>
-                            </div>
-                            <div class="form-group">
-                                <label> Nombre </label>
-                                <input type="text" class="form-control" placeholder="Ingresar Nombre" required>
-                            </div>
-                            <div class="form-group">
-                                <label> Contrasñea </label>
-                                <input type="text" class="form-control" placeholder="Ingresar Contraseña" required>
-                            </div>
-                            <div class="form-group">
-                                <label> Telefono </label>
-                                <input type="text" class="form-control" placeholder="Ingresar Telefono" required>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            <button type="submit" name="ingresarInventario" class="btn btn-success">Insertar</button>
-                        </div>
-                    </form>
-
-                </div>
-            </div>
-        </div>
-
+       
         <!-- Modal Editar -->
-        <div class="modal fade" id="editarP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Editar Registro</h5>
-                    </div>
-                    <form action="codeinventario.php" method="POST">
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label> ID </label>
-                                <input type="text" class="form-control" placeholder="Ingresar id" required>
-                            </div>
-                            <div class="form-group">
-                                <label> Nombre </label>
-                                <input type="text" class="form-control" placeholder="Ingresar Nombre" required>
-                            </div>
-                            <div class="form-group">
-                                <label> Contrasñea </label>
-                                <input type="text" class="form-control" placeholder="Ingresar Contraseña" required>
-                            </div>
-                            <div class="form-group">
-                                <label> Telefono </label>
-                                <input type="text" class="form-control" placeholder="Ingresar Telefono" required>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            <button type="submit" name="ingresarInventario" class="btn btn-success">Editar</button>
-                        </div>
-                    </form>
+      
 
                 </div>
             </div>

@@ -173,14 +173,27 @@
                                         <tr>
                                             <th class="border-top-0">ID</th>
                                             <th class="border-top-0">Fecha</th>
+                                            <th class="border-top-0">Factura</th>
                                             <th class="border-top-0">Descripcion</th>
+                                            <th class="border-top-0">Estado</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
                                             <td class="txt-oflo">01/01/2022</td>
+                                            <td class="txt-oflo">F01</td>
                                             <td class="txt-oflo">Lorem ipsum dolor sit amet.</td>
+                                            <td class="txt-oflo"><div class="dropdown">
+                                                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Estado
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                  <li><a class="dropdown-item" href="#">Finalizado</a></li>
+                                                  <li><a class="dropdown-item" href="#">En proceso</a></li>
+                                                  
+                                                </ul>
+                                              </div></td>
                             </div>
                         </div>
                         </td>
@@ -190,22 +203,66 @@
                         <tr>
                             <td>2</td>
                             <td class="txt-oflo">01/01/2022</td>
+                            <td class="txt-oflo">F02</td>
                             <td class="txt-oflo">Lorem ipsum dolor sit amet.</td>
+                            <td class="txt-oflo"><div class="dropdown">
+                                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Estado
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Finalizado</a></li>
+                                  <li><a class="dropdown-item" href="#">En proceso</a></li>
+                                  
+                                </ul>
+                              </div></td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td class="txt-oflo">01/01/2022</td>
+                            <td class="txt-oflo">F03</td>
                             <td class="txt-oflo">Lorem ipsum dolor sit amet.</td>
+                            <td class="txt-oflo"><div class="dropdown">
+                                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Estado
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Finalizado</a></li>
+                                  <li><a class="dropdown-item" href="#">En proceso</a></li>
+                                  
+                                </ul>
+                              </div></td>
                         </tr>
                         <tr>
                             <td>4</td>
                             <td class="txt-oflo">01/01/2022</td>
+                            <td class="txt-oflo">F04</td>
                             <td class="txt-oflo">Lorem ipsum dolor sit amet.</td>
+                            <td class="txt-oflo"><div class="dropdown">
+                                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Estado
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Finalizado</a></li>
+                                  <li><a class="dropdown-item" href="#">En proceso</a></li>
+                                  
+                                </ul>
+                              </div></td>
                         </tr>
                         <tr>
                             <td>5</td>  
                             <td class="txt-oflo">01/01/2022</td>
+                            <td class="txt-oflo">F05</td>
                             <td class="txt-oflo">Lorem ipsum dolor sit amet.</td>
+                            <td class="txt-oflo"><div class="dropdown">
+                                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Estado
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Finalizado</a></li>
+                                  <li><a class="dropdown-item" href="#">En proceso</a></li>
+                                  
+                                </ul>
+                              </div></td>
                         </tr>
 
                         </tbody>
@@ -213,14 +270,8 @@
                         </table>
                         <div class="text-center">
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                                data-bs-target="#agregarP">
-                                Agregar
-                            </button>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#editarP">
-                                Editar
-                            </button>
+                        
+                            
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Reporte</button>
                         </div>
                     </div>
@@ -231,81 +282,7 @@
         </div>
         <!-- footer -->
         <footer class="footer text-center"> 2022 © Tun Tun </footer>
-
-
-        <!-- Modal Agregar -->
-        <div class="modal fade" id="agregarP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Agregar Devolución</h5>
-                    </div>
-                    <form action="codeinventario.php" method="POST">
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label> ID </label>
-                                <input type="text" class="form-control"
-                                    placeholder="Ingresar ID" required>
-                            </div>
-                            <div class="form-group">
-                                <label> Fecha </label>
-                                <input type="text" class="form-control"
-                                    placeholder="Ingresar Fecha" required>
-                            </div>
-                            <div class="form-group">
-                                <label> Descripcion </label>
-                                <input type="text" class="form-control"
-                                    placeholder="Ingresar Descripcion" required>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Cerrar</button>
-                            <button type="submit" name="ingresarInventario" class="btn btn-success">Insertar</button>
-                        </div>
-                    </form>
-
-                </div>
-            </div>
-        </div>
-
         <!-- Modal Editar -->
-        <div class="modal fade" id="editarP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Editar Devolución</h5>
-                    </div>
-                    <form action="codeinventario.php" method="POST">
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label> ID </label>
-                                <input type="text" class="form-control"
-                                    placeholder="Ingresar ID" required>
-                            </div>
-                            <div class="form-group">
-                                <label> Fecha </label>
-                                <input type="text" class="form-control"
-                                    placeholder="Ingresar Fecha" required>
-                            </div>
-                            <div class="form-group">
-                                <label> Descripcion </label>
-                                <input type="text" class="form-control"
-                                    placeholder="Ingresar Descripcion" required>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Cerrar</button>
-                            <button type="submit" name="ingresarInventario" class="btn btn-success">Editar</button>
-                        </div>
-                    </form>
-
-                </div>
-            </div>
-        </div>
         <!-- End footer -->
 
     </div>
