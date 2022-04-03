@@ -251,7 +251,7 @@ function revalidar(){
         return false;
     }
     if(rpueblo==0){
-        Swal.fire("Ingrese su Pueblo / Ciudad");
+        Swal.fire("Ingrese su ciudad");
         return false;
     }
     if(card==0){
@@ -259,7 +259,7 @@ function revalidar(){
         return false;
     }
     if(!expresión4.test(card)){
-        Swal.fire("El número de tarejeta no es valido");
+        Swal.fire("El número de tarjeta no es valido");
         return false;
     }
     if(date==0){
@@ -267,11 +267,11 @@ function revalidar(){
         return false;
     }
     if(cvv==0){
-        Swal.fire("Ingrese sel numero de seguridad de la tarjeta");
+        Swal.fire("Ingrese el numero de seguridad de la tarjeta");
         return false;
     }
     if(!expresión5.test(cvv)){
-        Swal.fire("El número cvv de la tarejeta no es valido");
+        Swal.fire("El número cvv de la tarjeta no es valido");
         return false;
     }
 
