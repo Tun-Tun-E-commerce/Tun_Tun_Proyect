@@ -259,6 +259,14 @@ function revalidar(){
         Swal.fire("Debe seleccionar un metodo de pago");
         return false;
     }
+
+
+    if (metodo==2 && metodo==3) {
+        div = document.getElementById('for');
+        div.style.display = '';
+    }
+    
+
     if(card==0){
         Swal.fire("Ingrese un número de teléfono");
         return false;
@@ -300,3 +308,6 @@ function revalidar(){
     return false;
     }
 }
+
+
+      
