@@ -194,7 +194,7 @@ function validarac() {
 
 function revalidar(){
 
-    var nombrer, Apellidor, correor, direccionr, teléfonore, Cod_Post, rpueblo , card, date, cvv, expresión1, expresión2 , expresión4, expresión5;
+    var nombrer, Apellidor, correor, direccionr, teléfonore, Cod_Post, rpueblo ,metodo, card, date, cvv, expresión1, expresión2 , expresión4, expresión5;
     var nombrer = document.getElementById('nombrer').value;
     var Apellidor = document.getElementById("Apellidor").value;
     var correor = document.getElementById("correor").value;
@@ -202,6 +202,7 @@ function revalidar(){
     var teléfonore = document.getElementById("teléfonore").value;
     var rpueblo = document.getElementById("rpueblo").value;
     var Cod_Post = document.getElementById("Cod_Post").value;
+    var metodo = document.getElementById("metodo").value;
     var card = document.getElementById("card").value;
     var date = document.getElementById("date").value;
     var cvv = document.getElementById("cvv").value;
@@ -254,6 +255,18 @@ function revalidar(){
         Swal.fire("Ingrese su ciudad");
         return false;
     }
+    if(metodo==0){
+        Swal.fire("Debe seleccionar un metodo de pago");
+        return false;
+    }
+
+
+    if (metodo==2 && metodo==3) {
+        div = document.getElementById('for');
+        div.style.display = '';
+    }
+    
+
     if(card==0){
         Swal.fire("Ingrese un número de teléfono");
         return false;
@@ -295,3 +308,6 @@ function revalidar(){
     return false;
     }
 }
+
+
+      

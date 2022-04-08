@@ -3161,7 +3161,22 @@ body {
    height: 1.5em;
    border-radius: 0.25rem;
  }
+
  
+.form-select-1 {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #181818;
+  border-radius: 25px;
+}
+
+
+
+
  .form-select {
   display: block;
   width: 100%;
@@ -3182,6 +3197,7 @@ body {
      -moz-appearance: none;
           appearance: none;
 }
+
 
 .form-select:focus {
   border-color: #8c8c8c;
