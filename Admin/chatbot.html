@@ -1,34 +1,169 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/chatbot.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/chatbot.css" />
     <title>Hello, world!</title>
   </head>
   <body>
-   
-
-    <input type="checkbox" id="btn-modal">
-	<label for="btn-modal" class="lbl-modal"> <img src="../assets/images/chatbot/chatbot.png"alt="" id="chatbot" width="50"></label>
-	<div class="modal">
-		<div class="contenedor">
-			<header>¡Bienvenidos!</header>
-			<label for="btn-modal">X</label>
-			<div class="contenido">
-				<h3><!-- Agregar un titulo --></h3>
-				<p><!-- Agregar un mensaje --></p>
-			</div>
-		</div>
-	</div>
+    <input type="checkbox" id="btn-modal" />
+    <label for="btn-modal" class="lbl-modal">
+      <img
+        src="../assets/images/chatbot/chatbot.png"
+        alt=""
+        id="chatbot"
+        width="50"
+    /></label>
+    <div class="modal">
+      <div class="contenedor">
+        <header>¡PQRS con Tito!</header>
+        <label for="btn-modal">X</label>
+        <div class="contenido">
+          <h3>
+            <!-- Agregar un titulo -->
+            ¡Hola,soy tito el chatbot que te ayudará <br>
+            con las peticiones,quejas y reclamos!
+          </h3>
+          <br />
+          <h5>Dime,¿qué necesitas el día de hoy?</h5>
+          <!--Preuguntas-->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  ¿Cómo puedo registrarme?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>¡Sigue los siguientes pasos!</strong><br />
+                  <ol>
+                    <li>
+                      <a href="../register.html">
+                        Dale click aquí para ir a la página en la que puedes
+                        registrarte </a
+                      >.
+                    </li>
+                    <li>Ingresas tus datos personales.</li>
+                    <li>Acepta los términos de uso.</li>
+                    <li>Dale al botón "<i>Registrarse</i>".</li>
+                    <li>¡Listo! Cuenta hecha.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Tengo cuenta pero se me olvidó la contraseña
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>¡Sigue los siguientes pasos!</strong> <br />
+                  <b>Nota</b>: Revisa bien si los campos los llenaste correctamente a la hora de iniciar sesión. <br>
+                  Si el problema sigue persisitiendo o te olvidaste de la contraseña sigue los pasos.
+                  <ol>
+                    <li>
+                      <a href="../register.html"
+                        >Dale click aquí para ir a la página donde puedes
+                        recuperar la contraseña</a
+                      >.
+                    </li>
+                    <li>Ingresa tu correo electrónico.</li>
+                    <li>Dale en el botón "<i>Recuperar</i>".</li>
+                    <li>
+                      Revisa tu correo, ya que
+                      <b> allí se te enviará una contraseña provisional </b>.
+                    </li>
+                    <li>
+                      Utiliza esa contraseña para iniciar sesión. Para iniciar
+                      sesión dale click <a href="../login.html">aquí</a>.
+                    </li>
+                    <li>¡Listo! Ya puedes iniciar nuevamente.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Ya tengo cuenta y quiero iniciar sesión
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>¡Sigue los siguientes pasos para inciar sesión!</strong> <br>
+                  <ol>
+                    <li>Para inciar sesión dale click <a href="../login.html">aquí</a>.</li>
+                    <li>Ingresa tu correo y tu contraaseña en los campos especificados.</li>
+                    <li>Dale en el botón "<i>Ingresar</i>".</li>
+                    <li>¡Listo,ya entraste a tu cuenta!.</li>
+                  </ol>
+                  <b>Nota</b>: Para saber si ya entraste en tu cuenta <br>
+                  revisa si hay una cartera o bolsito al lado del ícono de persona  <br>
+                  en la parte superior derecha
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
