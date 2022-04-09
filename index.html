@@ -25,12 +25,13 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/chatbot.css">
 
 </head>
 
 <body>
 
-
+    
     <!-- Header Section - Start -->
     <header class="main-wrapper wrapper-2">
         <div class="header-area section-padding-lr-1 transparent-bar header-padding-tb sticky-bar sticky-white-bg">
@@ -83,6 +84,148 @@
                 </div>
             </div>
     </header>
+
+    <div id="chatbot_contenido">
+        <input type="checkbox" id="btn-modala" />
+        <label for="btn-modala" class="lbl-modala">
+          <img
+            src="/assets/images/chatbot/chatbot.png"
+            alt=""
+            id="chatbot"
+        /></label>
+        <div class="modala">
+          <div class="contenedor">
+            <header>¡PQRS con Tito!</header>
+            <label for="btn-modala">X</label>
+            <div class="contenido">
+              <h3>
+                <!-- Agregar un titulo -->
+                ¡Hola,soy tito el chatbot que te ayudará <br>
+                con las peticiones,quejas y reclamos!
+              </h3>
+              <br />
+              <h5>Dime,¿qué necesitas el día de hoy?</h5>
+              <!--Preuguntas-->
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      ¿Cómo puedo registrarme?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <strong>¡Sigue los siguientes pasos!</strong><br />
+                      <ol>
+                        <li>
+                          <a href="../register.html">
+                            Dale click aquí para ir a la página en la que puedes
+                            registrarte </a
+                          >.
+                        </li>
+                        <li>Ingresas tus datos personales.</li>
+                        <li>Acepta los términos de uso.</li>
+                        <li>Dale al botón "<i>Registrarse</i>".</li>
+                        <li>¡Listo! Cuenta hecha.</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Tengo cuenta pero se me olvidó la contraseña
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <strong>¡Sigue los siguientes pasos!</strong> <br />
+                      <b>Nota</b>: Revisa bien si los campos los llenaste correctamente a la hora de iniciar sesión. <br>
+                      Si el problema sigue persisitiendo o te olvidaste de la contraseña sigue los pasos.
+                      <ol>
+                        <li>
+                          <a href="../register.html"
+                            >Dale click aquí para ir a la página donde puedes
+                            recuperar la contraseña</a
+                          >.
+                        </li>
+                        <li>Ingresa tu correo electrónico.</li>
+                        <li>Dale en el botón "<i>Recuperar</i>".</li>
+                        <li>
+                          Revisa tu correo, ya que
+                          <b> allí se te enviará una contraseña provisional </b>.
+                        </li>
+                        <li>
+                          Utiliza esa contraseña para iniciar sesión. Para iniciar
+                          sesión dale click <a href="../login.html">aquí</a>.
+                        </li>
+                        <li>¡Listo! Ya puedes iniciar nuevamente.</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Ya tengo cuenta y quiero iniciar sesión
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <strong>¡Sigue los siguientes pasos para inciar sesión!</strong> <br>
+                      <ol>
+                        <li>Para inciar sesión dale click <a href="../login.html">aquí</a>.</li>
+                        <li>Ingresa tu correo y tu contraaseña en los campos especificados.</li>
+                        <li>Dale en el botón "<i>Ingresar</i>".</li>
+                        <li>¡Listo,ya entraste a tu cuenta!.</li>
+                      </ol>
+                      <b>Nota</b>: Para saber si ya entraste en tu cuenta <br>
+                      revisa si hay una cartera o bolsito al lado del ícono de persona  <br>
+                      en la parte superior derecha
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- Header Section - End -->
     <div class="fixed-bottom">Hola</div>
 <!-- mini cart start -->
@@ -1188,6 +1331,7 @@
             </div>
         </div>
     </footer>
+    
     <!-- Footer - End -->
 
 <!-- Modal -->
@@ -1229,6 +1373,8 @@
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/codes.js"></script>
+
+    
 </body>
 
 </html>
