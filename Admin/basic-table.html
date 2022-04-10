@@ -90,65 +90,82 @@
             <div class="scroll-sidebar scrollsa">
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
-                    <ul id="sidebarnav">
+                   <ul id="sidebarnav">
                         <li class="sidebar-item pt-2">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/index.html"
                                 aria-expanded="false">
                                 <i class="bi bi-arrow-left"></i>
-                                <span class="hide-menu">Volver al inicio</span>
+                                <span class="hide-menu bg-transparen">Volver al inicio</span>
                             </a>
+                   
                         </li>
-                        <!-- User Profile-->
-                        <li class="sidebar-item pt-2">
+                        
+                        <!--User Profile -->
+                        <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashboard.html"
                                 aria-expanded="false">
-                                <i class="far fa-clock" aria-hidden="true"></i>
+                                <i class="fa fa-clock" aria-hidden="true"></i>
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="profile.html"
-                                aria-expanded="false">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                                <span class="hide-menu">Perfil</span>
-                            </a>
+                        <li class="sidebar-item pt-2">
+                                <a class="sidebar-link waves-effect waves-dark sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    <i class="fa fa-users" aria-hidden="true"></i>  Fidelización del cliente
+                                </a>
+                              <div class="collapse" id="collapseExample"> 
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-secondary"><a href="#"> Inquietudes más recientes </a></li>
+                                        <li class="list-group-item list-group-item-secondary"><a href="#"> Inquietudes no respondidas </a></li>
+                                        <li class="list-group-item list-group-item-secondary"><a href="#"> Sugerencias </a></li>
+                                        <li class="list-group-item list-group-item-secondary"><a href="#">Calificaciónes </a> </li>
+                                      </ul>
+                              </div>
                         </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="basic-table.html"
-                                aria-expanded="false">
-                                <i class="fa fa-table" aria-hidden="true"></i>
-                                <span class="hide-menu">Últimos registros</span>
+                        <li class="sidebar-item pt-2">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fa fa-user" aria-hidden="true"></i>  Gestión de usuario
                             </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="product.html"
-                                aria-expanded="false">
-                                <i class="bi bi-box2-fill"></i>
-                                <span class="hide-menu">Productos</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="categories.html"
-                                aria-expanded="false">
-                                <i class="fa fa-file" aria-hidden="true"></i>
-                                <span class="hide-menu">Categorias</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="delivery.html"
-                                aria-expanded="false">
-                                <i class="fa fa-car" aria-hidden="true"></i>
-                                <span class="hide-menu">Envío</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="return.html"
-                                aria-expanded="false">
-                                <i class="fa fa-ban" aria-hidden="true"></i>
-                                <span class="hide-menu">Devolución</span>
-                            </a>
-                        </li>
-                    </ul>
+                          <div class="collapse" id="collapseExample2"> 
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-secondary"><a href="basic-table.html"> <p class="text-dark"> Últimos registros</p></a></li>
+                                    <li class="list-group-item list-group-item-secondary"><a href="profile.html">Actualización datos </a> </li>
+                                  </ul>
+                          </div>
+                    </li>
+                    <li class="sidebar-item pt-2">
+                        <a class="sidebar-link waves-effect waves-dark sidebar-link" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="fa fa-box" aria-hidden="true"></i>  Inventario
+                        </a>
+                      <div class="collapse" id="collapseExample3"> 
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-secondary"><a href="#"> Lorem, ipsum. </a></li>
+                                <li class="list-group-item list-group-item-secondary"><a href="#">Lorem, ipsum. </a> </li>
+                              </ul>
+                      </div>
+                </li>
+
+                <li class="sidebar-item pt-2">
+                    <a class="sidebar-link waves-effect waves-dark sidebar-link" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fa fa-box" aria-hidden="true"></i>  Ventas
+                    </a>
+                  <div class="collapse" id="collapseExample4"> 
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-secondary"><a href="product.html"> Productos</a></li>
+                            <li class="list-group-item list-group-item-secondary"><a href="categories.html">Categorias</a> </li>
+                          </ul>
+                  </div>
+            </li>
+            <li class="sidebar-item pt-2">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="fa fa-truck" aria-hidden="true"></i>  Envios y Devoluciones
+                </a>
+              <div class="collapse" id="collapseExample5"> 
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-secondary"><a href="delivery.html"> Envio </a></li>
+                        <li class="list-group-item list-group-item-secondary"><a href="return.html"> Devoluciones </a> </li>
+                      </ul>
+              </div>
+        </li>
 
                 </nav>
                 <!-- End Sidebar navigation -->

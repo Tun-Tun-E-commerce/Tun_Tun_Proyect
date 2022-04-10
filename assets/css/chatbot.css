@@ -5,17 +5,20 @@
     border: solid;
     width: 70px;
 	height: 70px;
-	z-index: 1;
+	border: solid black;
 }
 
-#chatbot_contenido, .modala{
-	width: 100%;
-	height: 100vh;
+#chatbot_contenido{
+	width: 10%;
+	height: 10vh;
 	display: flex;
 	z-index: 1060;
 }
 .modala{
-	margin-top: 1%;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	z-index: 1060;
 	position: fixed;
 	top: 0;
 	left: 0;
