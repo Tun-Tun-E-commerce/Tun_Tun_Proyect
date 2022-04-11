@@ -16,22 +16,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div id="list-example" class="list-group">
-      <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-    </div>
-    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-      <h4 id="list-item-1">Item 1</h4>
-      <p>...</p>
-      <h4 id="list-item-2">Item 2</h4>
-      <p>...</p>
-      <h4 id="list-item-3">Item 3</h4>
-      <p>...</p>
-      <h4 id="list-item-4">Item 4</h4>
-      <p>...</p>
-    </div>
+    
     <div id="chatbot_contenido">
     <input type="checkbox" id="btn-modala" />
     <label for="btn-modala" class="lbl-modala">
@@ -51,7 +36,7 @@
             con las peticiones,quejas y reclamos!
           </h3>
           <br />
-          <h5>Dime,¿qué necesitas el día de hoy?</h5>
+          <h5>Dime,¿qué necesitas el día de hoy Nom_Usuario?</h5>
           <!--Preuguntas-->
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -64,12 +49,12 @@
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  ¿Cómo puedo registrarme?
+                  ¿Cómo puedo agregar un producto al carrito de compras?
                 </button>
               </h2>
               <div
                 id="collapseOne"
-                class="accordion-collapse collapse show"
+                class="accordion-collapse collapse"
                 aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample"
               >
@@ -77,16 +62,16 @@
                   <strong>¡Sigue los siguientes pasos!</strong><br />
                   <ol>
                     <li>
-                      <a href="../register.html">
-                        Dale click aquí para ir a la página en la que puedes
-                        registrarte </a
-                      >.
+                      Dale click en  el producto que desees.
                     </li>
-                    <li>Ingresas tus datos personales.</li>
-                    <li>Acepta los términos de uso.</li>
-                    <li>Dale al botón "<i>Registrarse</i>".</li>
-                    <li>¡Listo! Cuenta hecha.</li>
+                    <li>Una vez seleccionado te redirigirá a una página en la cual podrás ver <br>
+                       las especificaciones del producto. </li>
+                    <li>Dale en el botón "<i>agregar al carrito</i>" </li>
+                    <li>¡Listo!.Ahora está en nuestro carrito de compras</li>
                   </ol>
+                  <b>Importante</b>: En el paso 2, te dice si el producto se encuentra en stock o no, <br>
+                  es decir, si hay un producto o no, ya que si no hay un producto te saldrá una alerta <br>
+                  diciendo que el producto no está disponible en el momento
                 </div>
               </div>
             </div>
@@ -100,7 +85,7 @@
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  Tengo cuenta pero se me olvidó la contraseña
+                  Quiero verificar mis datos o actualizarlos,¿cómo lo puedo hacer?
                 </button>
               </h2>
               <div
@@ -111,26 +96,24 @@
               >
                 <div class="accordion-body">
                   <strong>¡Sigue los siguientes pasos!</strong> <br />
-                  <b>Nota</b>: Revisa bien si los campos los llenaste correctamente a la hora de iniciar sesión. <br>
-                  Si el problema sigue persisitiendo o te olvidaste de la contraseña sigue los pasos.
                   <ol>
                     <li>
-                      <a href="../register.html"
-                        >Dale click aquí para ir a la página donde puedes
-                        recuperar la contraseña</a
-                      >.
+                        Dirigete al ícono o personita que se encuentra en el lado <br>
+                        superior derecho de la página que está al lado de un pequeño <br>
+                        bolso.
                     </li>
-                    <li>Ingresa tu correo electrónico.</li>
-                    <li>Dale en el botón "<i>Recuperar</i>".</li>
+                    <li>Dale click y selecciona "<i>Cuenta</i>". Esto te redirigirá a tu <br>
+                    página de usuario.</li>
+                    <li>Una vez ya estando en esta página te encontrarás con un menú donde <br>
+                    podrás ver tus pedidos,métodos de pago,administrar direcciones,detalles <br>
+                    de la cuenta y cerrar sesión. </li>
                     <li>
-                      Revisa tu correo, ya que
-                      <b> allí se te enviará una contraseña provisional </b>.
+                      Elige la opción que necesites.
                     </li>
                     <li>
-                      Utiliza esa contraseña para iniciar sesión. Para iniciar
-                      sesión dale click <a href="../login.html">aquí</a>.
+                     ¡Listo!, ya puedes ver tus datos y si necesitas, actualizarlos.
                     </li>
-                    <li>¡Listo! Ya puedes iniciar nuevamente.</li>
+                    
                   </ol>
                 </div>
               </div>
@@ -145,7 +128,7 @@
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  Ya tengo cuenta y quiero iniciar sesión
+                  Quiero cerrar la sesión ¿Cómo puedo hacerlo?
                 </button>
               </h2>
               <div
@@ -155,17 +138,80 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <strong>¡Sigue los siguientes pasos para inciar sesión!</strong> <br>
+                  <strong>¡Sigue los siguientes pasos!</strong> <br>
                   <ol>
-                    <li>Para inciar sesión dale click <a href="../login.html">aquí</a>.</li>
-                    <li>Ingresa tu correo y tu contraaseña en los campos especificados.</li>
-                    <li>Dale en el botón "<i>Ingresar</i>".</li>
-                    <li>¡Listo,ya entraste a tu cuenta!.</li>
+                    <li> Dirigete al ícono o personita que se encuentra en el lado <br>
+                      superior derecho de la página que está al lado de un pequeño <br>
+                      bolso.</li>
+                    <li>Dale click y selecciona "<i>Cerrar Sesión</i>". Esto te redirigirá a la <br>
+                      página de login</li>
+                    <li>¡Listo! Ya cerraste tu cuenta, ¡espero vuelvas muy pronto!</li>
                   </ol>
-                  <b>Nota</b>: Para saber si ya entraste en tu cuenta <br>
-                  revisa si hay una cartera o bolsito al lado del ícono de persona  <br>
-                  en la parte superior derecha
                 </div>
+          </div> 
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+               Tengo una sugerencia,inquietud o problemática que informar al administrador 
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+             <br>
+                
+               <form action="#">
+                
+                <strong>Cuentáme qué sucede</strong> 
+                <br><br>
+                <div class="container">
+                <div class="row">
+                <div class="col-sm-6">
+                <select class="form-select" aria-label="Default select example" id="floatingpqr">
+                  <option selected>Qué vas a enviar?</option>
+                  <option value="1">Una sugerencia</option>
+                  <option value="2">Una problemática</option>
+                  <option value="3">Una inquietud</option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Titulo de la PQR">
+                
+                </div>
+
+                </div> <br>
+
+                <textarea class="form-control" placeholder="Escribe la PQR"></textarea>
+                
+                <br>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="Califica nuestro servicio de 1 a 10" class="form-control" min="1" max="10">
+                  </div>
+                  <div class="col-sm-4">
+                    <input type="email" placeholder="Email de contacto" class="form-control">
+                  </div>
+                  <div class="col-sm-2">
+                    <button class="btn btn-success" type="submit">Enviar</button>
+                  </div>
+                </div>
+                <br>
+                <strong>Importante</strong>: La inquietud será respondida en los siguientes 7 días
+                <br> y será enviada al correo que acabas de poner.
+              </div>
+                </form>
+              
+                <br>
               </div>
             </div>
           </div>
