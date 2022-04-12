@@ -223,3 +223,65 @@ const Toast = Swal.fire({
     }})
     return false
 }}
+
+function validar_inquietudes() {
+    var respuesta_inquietud= document.getElementById("respuesta_inquietud").value;
+
+    if (respuesta_inquietud==0)
+    {
+        Swal.fire("Responda la inquietud para enviar la respuesta");
+    return false;
+
+    }
+
+    if (respuesta_inquietud) {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+        
+        Toast.fire({
+            icon: 'success',
+            title: 'PQRS Respondida'
+        })
+    return false;
+    }
+}
+
+function validar_inquietudes_nl() {
+    var respuesta_inquietud= document.getElementById("respuesta_inquietud").value;
+
+    if (respuesta_inquietud==0)
+    {
+        Swal.fire("Responda la inquietud para enviar la respuesta");
+    return false;
+
+    }
+
+    if (respuesta_inquietud) {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+        
+        Toast.fire({
+            icon: 'success',
+            title: 'PQRS Respondida'
+        })
+    return false;
+    }
+}
