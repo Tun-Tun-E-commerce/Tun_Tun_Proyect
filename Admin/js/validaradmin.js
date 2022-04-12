@@ -285,3 +285,29 @@ function validar_inquietudes_nl() {
     return false;
     }
 }
+
+function sugerencias() {
+    var agradecimientos="muchas gracias por tu sugerencia";
+
+    if (agradecimientos) {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+        
+        Toast.fire({
+            icon: 'success',
+            title: 'Enviando confirmación de mensaje leído'
+        })
+    return false;
+        
+    }
+    
+}
