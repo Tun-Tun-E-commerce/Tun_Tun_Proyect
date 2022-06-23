@@ -42,7 +42,7 @@
     <!-- Main wrapper - style you can find in pages.scss -->
     <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
         data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
-        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- Topbar header -->
         <header class="topbar" data-navbarbg="skin5">
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
                 <div class="navbar-header" data-logobg="skin6">
@@ -67,7 +67,6 @@
                 </div>
                 <!-- End Logo -->
                 <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
-
                     <!-- Right side toggle and nav items -->
                     <ul class="navbar-nav ms-auto d-flex align-items-center">
                         <!-- User profile and search -->
@@ -82,7 +81,9 @@
             </nav>
         </header>
         <!-- End Topbar header -->
+
         <!-- Left Sidebar -->
+        <!-- Aside bar - Start-->
         <aside class="left-sidebar" data-sidebarbg="skin6">
             <!-- Sidebar scroll-->
             <div class="scroll-sidebar scrollsa">
@@ -158,8 +159,7 @@
                                             href="materiaPrima.html">Materia Prima</a></li>
                                     <li class="list-group-item list-group-item-secondary"><a href="ordenP.html">Orden
                                             Produccion</a></li>
-                                    <li class="list-group-item list-group-item-secondary"><a
-                                            href="inventario.html">Inventario Materia Prima</a></li>
+                                    <li class="list-group-item list-group-item-secondary"><a href="inventario.html">Inventario Materia Prima</a></li>
                                     <li class=" list-group-item list-group-item-secondary"><a
                                             href="proveedorM.html">Proveedor Materia Prima</a></li>
                                     <li class="list-group-item list-group-item-secondary"><a
@@ -177,8 +177,7 @@
                             <div class="collapse" id="collapseExample4">
                                 <ul class="list-group">
                                     <li class="list-group-item list-group-item-secondary"><a href="product.html">
-                                            <p class="text-dark"> Productos </p>
-                                        </a></li>
+                                            Productos</a></li>
                                     <li class="list-group-item list-group-item-secondary"><a
                                             href="categories.html">Categorias</a> </li>
                                 </ul>
@@ -207,6 +206,7 @@
             </div>
             <!-- End Sidebar scroll-->
         </aside>
+        <!-- Aside bar - End -->
         <!-- End Left Sidebar  -->
         <!-- Page wrapper  -->
         <div class="page-wrapper">
@@ -214,7 +214,7 @@
             <div class="page-breadcrumb bg-white">
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Pedidos</h4>
+                        <h4 class="page-title">Detalle Orden Produccion</h4>
                     </div>
 
                 </div>
@@ -234,94 +234,28 @@
                                         <thead>
                                             <tr>
                                                 <th class="border-top-0">ID</th>
-                                                <th class="border-top-0">Fecha del pedido</th>
-                                                <th class="border-top-0">Fecha de entrega</th>
-                                                <th class="border-top-0">Fecha de Envio</th>
-                                                <th class="border-top-0">Forma de envio</th>
-                                                <th class="bordert-top-0">Destinatario</th>
-                                                <th class="bordert-top-0">Direccion del destinatario</th>
+                                                <th class="border-top-0">Descripcion</th>
+                                                <th class="border-top-0">Ubicacion</th>
+                                                <th class="bordert-top-0">Fecha</th>
+                                                <th class="bordert-top-0">Cantidad Orden Produccion</th>
+                                                <th class="bordert-top-0">Nombre Materia Prima</th>
                                                 <th class="bordert-top-0">Acciones</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>2</td>
-                                                <td class="txt-oflo">01/01/2022</td>
-                                                <td class="txt-oflo">01/01/2022</td>
-                                                <td class="txt-oflo">01/01/2022</td>
-                                                <td class="txt-oflo">Logistica</td>
-                                                <td class="txt-oflo">Alex</td>
-                                                <td class="txt-oflo">Calle 431</td>
+                                                <td>1</td>
+                                                <td class="txt-oflo">Lorem ipsum dolor sit amet consectetur.</td>
+                                                <td class="txt-oflo">Bogota</td>
+                                                <td class="txt-oflo">02/02/2022</td>
+                                                <td class="txt-oflo">22</td>
+                                                <td class="txt-oflo">Hilasas</td>
                                                 <td class="txt-oflo">
                                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                                         data-bs-target="#editarP">
                                                         Editar
                                                     </button>
-                                                    <button type="button" class="btn btn-danger"> Eliminar </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td class="txt-oflo">01/01/2022</td>
-                                                <td class="txt-oflo">01/01/2022</td>
-                                                <td class="txt-oflo">01/01/2022</td>
-                                                <td class="txt-oflo">Contraentrega</td>
-                                                <td class="txt-oflo">Juan</td>
-                                                <td class="txt-oflo">Calle 01</td>
-                                                <td class="txt-oflo">
-                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#editarP">
-                                                        Editar
-                                                    </button>
-                                                    <button type="button" class="btn btn-danger"> Eliminar </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td class="txt-oflo">01/01/2022</td>
-                                                <td class="txt-oflo">01/01/2022</td>
-                                                <td class="txt-oflo">01/01/2022</td>
-                                                <td class="txt-oflo">Contraentrega<s /td>
-                                                <td class="txt-oflo">Pedro</td>
-                                                <td class="txt-oflo">Calle 12</td>
-                                                <td class="txt-oflo">
-                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#editarP">
-                                                        Editar
-                                                    </button>
-                                                    <button type="button" class="btn btn-danger"> Eliminar </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td class="txt-oflo">01/01/2022</td>
-                                                <td class="txt-oflo">01/01/2022</td>
-                                                <td class="txt-oflo">01/01/2022</td>
-                                                <td class="txt-oflo">Logistica</td>
-                                                <td class="txt-oflo">Alfonso</td>
-                                                <td class="txt-oflo">Calle 666</td>
-                                                <td class="txt-oflo">
-                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#editarP">
-                                                        Editar
-                                                    </button>
-                                                    <button type="button" class="btn btn-danger"> Eliminar </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>6</td>
-                                                <td class="txt-oflo">01/01/2022</td>
-                                                <td class="txt-oflo">01/01/2022</td>
-                                                <td class="txt-oflo">01/01/2022</td>
-                                                <td class="txt-oflo">Logistica</td>
-                                                <td class="txt-oflo">Maria</td>
-                                                <td class="txt-oflo">Calle 981</td>
-                                                <td class="txt-oflo">
-                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#editarP">
-                                                        Editar
-                                                    </button>
-                                                    <button type="button" class="btn btn-danger"> Eliminar </button>
+                                                    <button type="button" class="btn btn-danger">Eliminar</button>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -352,7 +286,7 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Agregar Pedido</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Agregar Detalle Orden Produccion</h5>
                             </div>
                             <form onsubmit="return validarped()">
                                 <div class="modal-body">
@@ -362,125 +296,41 @@
                                             placeholder="Ingresar ID">
                                     </div>
                                     <div class="form-group">
-                                        <label> Fecha pedido </label>
+                                        <label> Descripcion </label>
                                         <input name="feped" id="feped" type="text" class="form-control"
-                                            placeholder="Ingresar Fecha">
+                                            placeholder="Ingresar Descripcion">
                                     </div>
                                     <div class="form-group">
-                                        <label> Fecha entrega</label>
+                                        <label>Ubicacion</label>
                                         <input name="fepedd" id="fepedd" type="text" class="form-control"
-                                            placeholder="Ingresar Fecha">
+                                            placeholder="Ingresar Ubicacion">
                                     </div>
                                     <div class="form-group">
-                                        <label> Fecha envío</label>
-                                        <input name="fepeddd" id="fepeddd" type="text" class="form-control"
-                                            placeholder="Ingresar Fecha">
+                                        <label>Fecha</label>
+                                        <input name="fepedd" id="fepedd" type="text" class="form-control"
+                                            placeholder="Ingresar fecha">
                                     </div>
                                     <div class="form-group">
-                                        <label> Forma de envío </label>
-                                        <input name="formped" id="formped" type="text" class="form-control"
-                                            placeholder="Ingresar Nombre">
-                                    </div>
-                                    <div class="form-group">
-                                        <label> Destinatario </label>
-                                        <input name="destiped" id="destiped" type="text" class="form-control"
+                                        <label>Cantidad Orden Produccion</label>
+                                        <input name="fepedd" id="fepedd" type="text" class="form-control"
                                             placeholder="Ingresar Cantidad">
                                     </div>
                                     <div class="form-group">
-                                        <label> Direccion destinatario </label>
-                                        <input name="direcped" id="direcped" type="text" class="form-control"
-                                            placeholder="Ingresar Fecha">
+                                        <label>Nombre Materia Prima</label>
+                                        <input name="fepedd" id="fepedd" type="text" class="form-control"
+                                            placeholder="Ingresar Nombre">
                                     </div>
-                                    <div class="form-group">
-                                        <label> Factura </label>
-                                        <input name="factuped" id="factuped" type="text" class="form-control"
-                                            placeholder="Ingresar Precio">
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-success"
+                                            onclick="validarped()">Insertar</button>
                                     </div>
-                                    <div class="form-group">
-                                        <label> Envio </label>
-                                        <input name="envioped" id="envioped" type="text" class="form-control"
-                                            placeholder="Ingresar Precio">
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="submit" class="btn btn-success"
-                                        onclick="validarped()">Insertar</button>
-                                </div>
                             </form>
 
                         </div>
                     </div>
                 </div>
-
-                <!-- Modal Editar -->
-                <div class="modal fade" id="editarP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Editar Pedido</h5>
-                            </div>
-                            <form onsubmit="return pedvalidar()">
-                                <div class="modal-body">
-                                    <div class="form-group">
-                                        <label> ID </label>
-                                        <input name="idpes" id="idpes" type="text" class="form-control"
-                                            placeholder="Ingresar ID">
-                                    </div>
-                                    <div class="form-group">
-                                        <label> Fecha pedido </label>
-                                        <input name="fepes" id="fepes" type="text" class="form-control"
-                                            placeholder="Ingresar Fecha">
-                                    </div>
-                                    <div class="form-group">
-                                        <label> Fecha entrega</label>
-                                        <input name="fepess" id="fepess" type="text" class="form-control"
-                                            placeholder="Ingresar Fecha">
-                                    </div>
-                                    <div class="form-group">
-                                        <label> Fecha envío</label>
-                                        <input name="fepesss" id="fepesss" type="text" class="form-control"
-                                            placeholder="Ingresar Fecha">
-                                    </div>
-                                    <div class="form-group">
-                                        <label> Forma de envío </label>
-                                        <input name="formpes" id="formpes" type="text" class="form-control"
-                                            placeholder="Ingresar Nombre">
-                                    </div>
-                                    <div class="form-group">
-                                        <label> Destinatario </label>
-                                        <input name="destpes" id="destpes" type="text" class="form-control"
-                                            placeholder="Ingresar Cantidad">
-                                    </div>
-                                    <div class="form-group">
-                                        <label> Direccion destinatario </label>
-                                        <input name="direpes" id="direpes" type="text" class="form-control"
-                                            placeholder="Ingresar Fecha">
-                                    </div>
-                                    <div class="form-group">
-                                        <label> Factura </label>
-                                        <input name="factpes" id="factpes" type="text" class="form-control"
-                                            placeholder="Ingresar Precio">
-                                    </div>
-                                    <div class="form-group">
-                                        <label> Envio </label>
-                                        <input name="envpes" id="envpes" type="text" class="form-control"
-                                            placeholder="Ingresar Precio">
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="submit" class="btn btn-success" onclick="pedvalidar()">Editar</button>
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Full screen modal -->
                 <!-- The Modal -->
                 <div class="modal" id="myModal">
