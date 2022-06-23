@@ -309,5 +309,81 @@ function revalidar(){
     }
 }
 
+function validar_pqr() {
+    var  floatingInput=document.getElementById("floatingInput").value;
+    var  desc_pqrs=document.getElementById("desc_pqrs").value;
+    var  qualification=document.getElementById("qualification").value;
+    var  email_contacto=document.getElementById("email_contacto").value;
+    var  floatingpqr= document.getElementById("floatingpqr");
+    var  tipo_pqr= floatingpqr.options[floatingpqr.selectedIndex].text;
+    var  expresion_email = /\w+@\w+\.[a-zA-Z]/;
+    var  expresión_números=/[0-9]+/
+
+    if ( floatingInput==0) {
+        Swal.fire("Ingrese el tipo de pqr");
+        return false;
+    }
+
+    
+    if (desc_pqrs==0) {
+        Swal.fire("Ingrese el mensaje de la pqr");
+        return false;
+    }
+
+    if (Number(qualification)==0) {
+        Swal.fire("Ingrese un número entre 1 y 10");
+        return false;
+    }
+
+    if(!expresión_números.test(qualification)){
+        Swal.fire("Por favor,escriba sólo números");
+        return false;
+    }
+    
+    
+
+    if(!expresion_email.test(email_contacto)){
+        Swal.fire("El correo no es valido");
+        return false;
+    }
+
+    if (floatingInput && desc_pqrs && qualification && email_contacto) {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+        
+        Toast.fire({
+            icon: 'success',
+            title: 'PQRS Enviada'
+        })
+    return false;
+    }
+
+}
+
+/* function validarl(){
+
+    var loginl, contraseñal;
+
+    var loginl = document.getElementById('loginl').value;
+    var contraseñal = document.getElementById("contraseñal").value;
+    if(loginl==0){
+        Swal.fire("Ingrese el usuario, correo o teléfono.");
+        return false;
+    }
+    if(contraseñal==0){
+        Swal.fire("Ingrese su contraseña");
+        return false;
+    }
+
+} */
 
       

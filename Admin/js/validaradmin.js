@@ -8,12 +8,12 @@ function validarad() {
     var telef = document.getElementById("telef").value;
     expresión1 = /\w+@\w+\.[a-zA-Z]/;
     expresión2 = /\d{7,10}$/;
-    
-    
+
     if(actn==0){
         Swal.fire("Ingrese el nombre");
         return false;
     }
+
     if (actn.length>15){
         Swal.fire("El nombre es muy largo")
         return false;
@@ -160,7 +160,7 @@ const Toast = Swal.fire({
     }})
     return false
 }}
-
+    
 function validarca(){
 
 var sid, naa;
@@ -223,3 +223,224 @@ const Toast = Swal.fire({
     }})
     return false
 }}
+
+function validar_inquietudes() {
+    var respuesta_inquietud= document.getElementById("respuesta_inquietud").value;
+
+    if (respuesta_inquietud==0)
+    {
+        Swal.fire("Responda la inquietud para enviar la respuesta");
+    return false;
+
+    }
+
+    if (respuesta_inquietud) {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+        
+        Toast.fire({
+            icon: 'success',
+            title: 'PQRS Respondida'
+        })
+    return false;
+    }
+}
+
+function sugerencias() {
+    var agradecimientos="muchas gracias por tu sugerencia";
+
+    if (agradecimientos) {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+        
+        Toast.fire({
+            icon: 'success',
+            title: 'Enviando confirmación de mensaje leído'
+        })
+    return false;
+        
+    }
+    
+}
+function validar_problematicas() {
+    var respuesta_problematica= document.getElementById("respuesta_problematica").value;
+
+    if (respuesta_problematica==0)
+    {
+        Swal.fire("Responda la problemática para enviar la respuesta");
+    return false;
+
+    }
+
+    if (respuesta_problematica) {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+        
+        Toast.fire({
+            icon: 'success',
+            title: 'PQRS Respondida'
+        })
+    return false;
+    }
+}
+
+function pedvalidar(){
+    
+    var idpes, fepes, fepess, fepesss, formpes, destpes, direpes, factpes, envpes;
+    var fepes = document.getElementById('fepes').value;
+    var fepess = document.getElementById('fepess').value;
+    var fepesss = document.getElementById('fepesss').value;
+    var formpes = document.getElementById('formpes').value;
+    var destpes = document.getElementById('destpes').value;
+    var direpes = document.getElementById('direpes').value;
+    var factpes = document.getElementById('factpes').value;
+    var envpes = document.getElementById('envpes').value;
+    
+    if(idpes==0) {
+        Swal.fire("Ingrese el id del pedido");
+        return false;
+    }
+    if(fepes==0) {
+        Swal.fire("Ingrese la fecha del pedido  ");
+        return false;
+    }
+    if(fepess==0) {
+        Swal.fire("Ingrese la fecha de entrega  ");
+        return false;
+    }
+    if(fepesss==0) {
+        Swal.fire("Ingrese la fecha de envio  ");
+        return false;
+    }
+    if(formpes==0) {
+        Swal.fire("Ingrese  la forma del  pedido");
+        return false;
+    }
+    if(destpes==0) {
+        Swal.fire("Ingrese  el nombre del destinatario ");
+        return false;
+    }
+    if(direpes==0) {
+        Swal.fire("Ingrese  la direccion del destinatario");
+        return false;
+    }
+    if(factpes==0) {
+        Swal.fire("Ingrese  el número de factura ");
+        return false;
+    }
+    if(envpes==0) {
+        Swal.fire("Ingrese  el número de envio ");
+        return false;
+    }
+    if (idpes && fepes && fepess && fepesss && formpes && destpes && direpes && factpes && envpes ) {
+    const Toast = Swal.fire({
+        title: 'Quiere guardar los cambios?',
+        showDenyButton: true,
+        showCancelButton: false,
+        confirmButtonText: 'Guardar',
+        denyButtonText: `No guardar`,
+        }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            Swal.fire('Guardado!', '', 'success')
+        } else if (result.isDenied) {
+            Swal.fire('No se guardaron! ', '', 'canceled')
+        }})
+        return false
+    }}
+    
+function validarped(){
+
+    
+    var idped, feped, fepedd, fepeddd, formped, destiped, direcped, factuped, envioped;
+    var idped = document.getElementById('idped').value;
+    var feped = document.getElementById('feped').value;
+    var fepedd = document.getElementById('fepedd').value;
+    var fepeddd = document.getElementById('fepeddd').value;
+    var formped = document.getElementById('formped').value;
+    var destiped = document.getElementById('destiped').value;
+    var direcped = document.getElementById('direcped').value;
+    var factuped = document.getElementById('factuped').value;
+    var envioped = document.getElementById('envioped').value;
+    
+    if(idped==0) {
+        Swal.fire("Ingrese el id del pedido");
+        return false;
+    }
+    if(feped==0) {
+        Swal.fire("Ingrese la fecha del pedido  ");
+        return false;
+    }
+    if(fepedd==0) {
+        Swal.fire("Ingrese la fecha de entrega  ");
+        return false;
+    }
+    if(fepeddd==0) {
+        Swal.fire("Ingrese la fecha de envio  ");
+        return false;
+    }
+    if(formped==0) {
+        Swal.fire("Ingrese  la forma del  pedido");
+        return false;
+    }
+    if(destiped==0) {
+        Swal.fire("Ingrese  el nombre del destinatario ");
+        return false;
+    }
+    if(direcped==0) {
+        Swal.fire("Ingrese  la direccion del destinatario");
+        return false;
+    }
+    if(factuped==0) {
+        Swal.fire("Ingrese  el número de factura ");
+        return false;
+    }
+    if(envioped==0) {
+        Swal.fire("Ingrese  el número de envio ");
+        return false;
+    }
+    
+    if (idped && feped && fepedd && fepeddd && formped && destiped && direcped && factuped && envioped ) {
+    const Toast = Swal.fire({
+        title: 'Quiere guardar los cambios?',
+        showDenyButton: true,
+        showCancelButton: false,
+        confirmButtonText: 'Guardar',
+        denyButtonText: `No guardar`,
+        }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            Swal.fire('Guardado!', '', 'success')
+        } else if (result.isDenied) {
+            Swal.fire('No se guardaron! ', '', 'canceled')
+        }})
+        return false
+    }}
+    
