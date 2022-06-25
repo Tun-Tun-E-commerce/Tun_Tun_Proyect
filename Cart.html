@@ -132,11 +132,11 @@
             </div>
         </div>
 <div class="checkout-main-area pb-130">
-    <div class="container" >
-        <div class="checkout-wrap pt-30 ">
+    <div class="container">
+        <div class="checkout-wrap1 ">
         <form  onsubmit="return revalidar()">
             <div class="row"> 
-                <div class="col-lg-7">
+                <div class="col-lg-7_7">
                     <div class="billing-info-wrap" >
                         <h3>DETALLES DE FACTURACIÓN</h3>
                         <div class="row">
@@ -190,33 +190,46 @@
                                 <div class="billing-info mb-20">
                                         <label for="">Metodo de Pago</label> 
                                         <select class="form-select-1"  aria-label="Default select example"  id="metodo" name="metodo" >
-                                            <option value="0">Seleccione:</option>
+                                            <option value="">Seleccione:</option>
                                             <option value="1">Contraentrega</option>
-                                            <option value="2">Tarjeta Credito</option>
-                                            <option value="3">PayPal</option>
+                                            <option value="2" >Tarjeta Credito</option>
+                                            <option value="3" >PayPal</option>
                                         </select>
                                 </div>
-                                <div class="billing-info mb-20" style="display: none;">
-                                    <label>Numero de Tarjeta <abbr class="required" title="required">*</abbr></label>
-                                    <input type="text" id="card" name="card">
-                                </div>
+                       
+                                
+                    
+                        </div>
+                        <div id="div1">
+                            <div class="billing-info mb-20" >
+                                <label>Numero de Tarjeta <abbr class="required" title="required">*</abbr></label>
+                                <input type="text" id="numcard" name="numcard">
                             </div>
-                            <div class="col-lg-6 col-md-6" style="display: none;">
-                                <div class="billing-info mb-20">
-                                    <label>Fecha <abbr class="required" title="required">*</abbr></label>
-                                    <input type="text" id="date" name="date">
-                                </div>
-                            </div><div class="col-lg-6 col-md-6" style="display: none;">
+                            <div class="row">
+                            <div class="col-lg-5 col-md-4" >
                                 <div class="billing-info mb-20">
                                     <label>CVV <abbr class="required" title="required">*</abbr></label>
-                                    <input type="password" id="cvv" name="cvv">
+                                    <input type="text" id="cvv" name="cvv">
                                 </div>
                             </div>
+                            <div class="col-lg-5 col-md-4" >
+                                <div class="billing-info mb-20">
+                                    <label>Fecha <abbr class="required" title="required">*</abbr></label>
+                                    <input type="date" id="fecha" name="cvv">
+                                </div>
                             </div>
-                            
+                        </div>
+                            <div class="billing-info mb-20" >
+                                <label>Propietario  Tarjeta<abbr class="required" title="required">*</abbr></label>
+                                <input type="text" id="procard" name="procard">
+                            </div>  
+                       
+                        
+                    </div>
+                          </div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-7_77">
                         <div class="your-order-area">
                             <h3>Tu Pedido</h3>
                             <div class="your-order-wrap gray-bg-4">
@@ -366,6 +379,7 @@
     <script src="assets/js/plugins/select2.min.js"></script>
     <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
     <!-- Main JS -->
+    <script src="assets/js/oculta.js"></script>
     <script src="assets/js/codes.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/alerts.js"></script>

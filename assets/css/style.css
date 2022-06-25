@@ -1875,6 +1875,7 @@ body {
          -ms-flex: 0 0 auto;
              flex: 0 0 auto;
      width: 50%;
+ 
    }
    .col-lg-7 {
      -webkit-box-flex: 0;
@@ -1882,7 +1883,27 @@ body {
          -ms-flex: 0 0 auto;
              flex: 0 0 auto;
      width: 45%;
+     
    }
+
+   .col-lg-7_7 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
+
+  }
+
+  .col-lg-7_77 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
+ 
+  }
+
    .col-lg-8 {
      -webkit66x: 0;
      -webkit-flex: 0 0 auto;
@@ -3171,7 +3192,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #181818;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 
@@ -27279,7 +27300,7 @@ body {
  
  .billing-info-wrap .billing-info input {
    border: 1px solid #e8e8e8;
-   border-radius:25px;
+   border-radius:10px;
    height: 50px;
    background-color: transparent;
    padding: 2px 20px;
